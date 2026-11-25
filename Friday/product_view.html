@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wireless Headphones | Friday</title>
+    <!-- Bootstrap 5 CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+        integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Announcement Bar -->
+    <div class="container-fluid bg-dark">
+        <div class="row mx-lg-5 px-lg-5">
+            <div class="col-4 d-flex justify-content-start">
+                <div><a class=" text-decoration-none text-light" href="index.html">Friday</a></div>
+
+            </div>
+            <div class="col-4 d-flex justify-content-center">
+                <div><a class="text-decoration-none text-light mx-auto" href="account_type_change.html">Become a Seller</a></div>
+
+            </div>
+            <div class="col-4 d-flex justify-content-end">
+                <div><a class="text-decoration-none text-light" href="help.html">Help</a></div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- Nav bar -->
+    <div class="mx-lg-5 px-lg-5">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"><img src="image/logo.png" height="50px" width="150px"
+                        alt="Header-logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav  me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="sellers.html">SELLERS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="on_discount.html">ON DISCOUNTS</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="seller_shop.html" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                CATAGORIES
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="best_sells.html#sports">SPORTS</a></li>
+                                <li><a class="dropdown-item" href="best_sells.html#tech-gadgets">TECH & GADGETS</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="best_sells.html">+ ADD MORE</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="todays_deal.html">TODAY'S DEAL</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="best_sells.html">BEST SELLS</a>
+                        </li>
+
+                    </ul>
+                    <div class="collapse collapse-horizontal" id="search">
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2 mb-2" type="search" placeholder="Search"
+                                aria-label="Search" />
+                        </form>
+                    </div>
+                    <a href="#search" class="mx-1 text-black" data-bs-toggle="collapse" role="button"
+                        aria-expanded="false"><i class="fa-solid fa-magnifying-glass fa-xl"></i></a>
+                    <a href="cart.html" class="mx-1 text-black"><i class="fa-solid fa-cart-shopping fa-xl"></i></a>
+                    <a href="wishlist.html" class="mx-1 text-black" aria-label="Wishlist"><i class="fa-solid fa-heart fa-xl"></i></a>
+                    <a href="profile_customer.html" class="mx-1 text-black"><i class="fa-solid fa-circle-user fa-xl"></i></a>
+                </div>
+            </div>
+    </div>
+    </nav>
+    </div>
+
+
+
+
+
+
+<div class="container py-5">
+  
+  <!-- Breadcrumb Navigation -->
+  <nav aria-label="breadcrumb" class="mb-4">
+    <ol class="breadcrumb small">
+      <li class="breadcrumb-item"><a href="index.html" class="text-decoration-none text-secondary">Home</a></li>
+      <li class="breadcrumb-item"><a id="productCategoryLink" href="best_sells.html" class="text-decoration-none text-secondary">Tech & Gadgets</a></li>
+      <li class="breadcrumb-item active text-primary fw-semibold" aria-current="page" id="productBreadcrumb">Wireless Headphones</li>
+    </ol>
+  </nav>
+
+  <!-- MAIN PRODUCT SECTION -->
+  <div class="row g-4 mb-5">
+    
+    <!-- Left Column: Product Image Gallery -->
+    <div class="col-lg-6">
+      <div class="card border-0 rounded-4 overflow-hidden bg-light p-3 shadow-sm">
+        <!-- Main Featured Image -->
+        <div class="position-relative bg-white rounded-4 overflow-hidden mb-3" style="height: 380px;">
+          <span id="productBadge" class="position-absolute top-0 start-0 m-3 badge bg-primary text-white fw-bold px-3 py-2 rounded-2">BEST SELLER</span>
+          
+          <button id="wishlistButton" type="button" aria-label="Add to wishlist" aria-pressed="false" class="position-absolute top-0 end-0 m-3 btn btn-light rounded-circle shadow-sm p-0 d-flex align-items-center justify-content-center border-danger" style="width: 42px; height: 42px;">
+            <i class="fa-regular fa-heart text-danger"></i>
+          </button>
+          
+          <img id="mainProductImg" src="image/headphones.jpg" alt="Wireless Headphones" class="w-100 h-100 object-fit-contain p-4">
+        </div>
+        <p class="small text-secondary mb-0 mt-3">Product image shown for reference. Details vary by selected product.</p>
+      </div>
+    </div>
+
+    <!-- Right Column: Product Info & Actions -->
+    <div class="col-lg-6 d-flex flex-column justify-content-between">
+      <div>
+        <small id="productCategory" class="text-primary fw-bold text-uppercase d-block mb-1" style="font-size: 0.75rem;">Tech & Gadgets</small>
+        <h1 id="productName" class="h2 fw-bold text-dark mb-2">Wireless Noise-Canceling Headphones</h1>
+        
+        <!-- Ratings & Reviews Summary -->
+        <div class="d-flex align-items-center gap-2 mb-3">
+          <div class="text-warning small">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+          </div>
+          <span id="productRating" class="fw-bold small text-dark">4.7</span>
+          <span id="productReviewCount" class="text-muted small">&bull; 128 Customer Reviews</span>
+        </div>
+
+        <!-- Pricing Section -->
+        <div class="d-flex align-items-baseline gap-3 mb-4">
+          <h2 id="productPrice" class="fw-bold text-dark mb-0">&#2547;4,050</h2>
+          <span id="productOriginalPrice" class="text-muted text-decoration-line-through fs-5">&#2547;4,950</span>
+          <span id="productDiscount" class="badge bg-danger-subtle text-danger border border-danger px-2 py-1 rounded-pill small">18% OFF</span>
+        </div>
+
+        <p id="productDescription" class="text-secondary small mb-4">
+          Experience premium active noise cancellation with up to 30 hours of continuous playback. Designed with comfortable memory foam cushions and high-fidelity acoustic drivers.
+        </p>
+
+        <hr class="text-secondary opacity-25 mb-4">
+
+        <!-- Variant Selection -->
+        <div id="productVariantSection" class="mb-4">
+          <span id="productVariantLabel" class="form-label fw-bold text-dark small d-block">Select Color</span>
+          <div id="productVariants" class="d-flex flex-wrap gap-2" role="group" aria-labelledby="productVariantLabel"></div>
+        </div>
+
+        <!-- Quantity & Add to Cart -->
+        <div class="d-flex flex-wrap gap-3 mb-4">
+          <div class="input-group input-group-sm border rounded-pill overflow-hidden" style="width: 120px; height: 42px;">
+            <button id="quantityDecrease" class="btn btn-light border-0 px-3 fs-6" type="button" aria-label="Decrease quantity">-</button>
+            <input id="productQuantity" type="number" class="form-control text-center border-0 bg-transparent shadow-none p-0 fw-bold" value="1" min="1" max="10" inputmode="numeric" aria-label="Quantity">
+            <button id="quantityIncrease" class="btn btn-light border-0 px-3 fs-6" type="button" aria-label="Increase quantity">+</button>
+          </div>
+
+          <button id="addToCartButton" type="button" class="btn btn-dark flex-grow-1 rounded-pill py-2 fw-medium d-flex align-items-center justify-content-center gap-2 shadow-sm">
+            <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+          </button>
+        </div>
+        <p id="cartFeedback" class="small text-success mb-3" role="status" aria-live="polite"></p>
+      </div>
+
+      <!-- Seller Info & Delivery Card -->
+      <div class="card border rounded-4 p-3 bg-light">
+        <div class="d-flex align-items-center justify-content-between mb-2">
+          <div class="d-flex align-items-center gap-2">
+            <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center fw-bold" style="width: 35px; height: 35px;">
+              F
+            </div>
+            <div>
+              <h6 class="fw-bold text-dark mb-0 small">Friday Official Store</h6>
+              <span class="text-muted" style="font-size: 11px;"><i class="fa-solid fa-circle-check text-success me-1"></i> Verified Merchant</span>
+            </div>
+          </div>
+          <a href="seller_shop.html" class="btn btn-outline-primary btn-sm rounded-pill px-3" style="font-size: 12px;">Visit Store</a>
+        </div>
+        <div class="d-flex gap-3 text-secondary small pt-2 border-top">
+          <span><i class="fa-solid fa-truck text-primary me-1"></i> Free Shipping</span>
+          <span>&bull;</span>
+          <span><i class="fa-solid fa-rotate-left text-primary me-1"></i> 7 Days Return</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <section class="card border rounded-4 p-4 p-md-5 shadow-sm mb-5" aria-labelledby="productDetailsHeading">
+    <div class="row g-4">
+      <div class="col-lg-5">
+        <small class="text-primary fw-bold text-uppercase d-block mb-1">Product details</small>
+        <h2 id="productDetailsHeading" class="h4 fw-bold text-dark mb-3">Made for everyday listening</h2>
+        <p id="productLongDescription" class="text-secondary mb-0">Enjoy clear, balanced sound and comfortable listening throughout your day.</p>
+      </div>
+      <div class="col-lg-7">
+        <h3 class="h6 fw-bold text-dark mb-3">Specifications</h3>
+        <dl id="productSpecifications" class="row small mb-0"></dl>
+      </div>
+    </div>
+  </section>
+
+  <!-- SIMILAR PRODUCTS SECTION -->
+  <div class="mt-5 pt-4 border-top">
+    <div class="d-flex justify-content-between align-items-end mb-4">
+      <div>
+        <small class="text-primary fw-bold text-uppercase d-block mb-1" style="font-size: 11px;">Recommendations</small>
+        <h3 class="fw-bold text-dark mb-0">Similar Products You Might Like</h3>
+      </div>
+      <a href="best_sells.html" class="text-dark fw-medium text-decoration-none small">View All <i class="fa-solid fa-arrow-right ms-1"></i></a>
+    </div>
+
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+      
+      <!-- Similar Item 1 -->
+      <div class="col">
+        <div class="card border rounded-4 p-3 shadow-sm d-flex flex-column h-100 bg-white">
+          <div class="position-relative bg-light rounded-4 overflow-hidden mb-3" style="height: 220px;">
+            <span class="position-absolute top-0 start-0 m-2 badge bg-dark text-white fw-bold px-2 py-1 rounded-2">DEAL</span>
+            <button onclick="this.querySelector('i').classList.toggle('fa-solid'); this.querySelector('i').classList.toggle('fa-regular'); this.querySelector('i').classList.toggle('text-danger')" class="position-absolute top-0 end-0 m-2 btn btn-light rounded-circle shadow-sm p-0 d-flex align-items-center justify-content-center border-danger" style="width: 36px; height: 36px;">
+              <i class="fa-regular fa-heart text-danger"></i>
+            </button>
+            <img src="image/watch.jpg" alt="Watch" class="w-100 h-100 object-fit-cover">
+          </div>
+          <div class="card-body p-0 d-flex flex-column flex-grow-1">
+            <small class="text-primary fw-bold text-uppercase d-block mb-1" style="font-size: 0.65rem;">Sports</small>
+            <h6 class="fw-bold text-dark mb-1">Sports Watch</h6>
+            <p class="text-secondary small mb-3">Water resistant fitness tracking watch.</p>
+            <div class="mt-auto pt-2">
+              <span class="fw-bold fs-5 text-dark d-block mb-2">&#2547;1,550</span>
+              <button
+                                    class="btn btn-dark w-100 py-2 rounded-3 fw-medium d-flex align-items-center justify-content-center gap-2">
+                                    <i class="fa-solid fa-plus"></i> Add to cart
+                                </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Similar Item 2 -->
+      <div class="col">
+        <div class="card border rounded-4 p-3 shadow-sm d-flex flex-column h-100 bg-white">
+          <div class="position-relative bg-light rounded-4 overflow-hidden mb-3" style="height: 220px;">
+            <span class="position-absolute top-0 start-0 m-2 badge bg-dark text-white fw-bold px-2 py-1 rounded-2">BEST SELL</span>
+            <button onclick="this.querySelector('i').classList.toggle('fa-solid'); this.querySelector('i').classList.toggle('fa-regular'); this.querySelector('i').classList.toggle('text-danger')" class="position-absolute top-0 end-0 m-2 btn btn-light rounded-circle shadow-sm p-0 d-flex align-items-center justify-content-center border-danger" style="width: 36px; height: 36px;">
+              <i class="fa-regular fa-heart text-danger"></i>
+            </button>
+            <img src="image/lamp.jpg" alt="Lamp" class="w-100 h-100 object-fit-cover">
+          </div>
+          <div class="card-body p-0 d-flex flex-column flex-grow-1">
+            <small class="text-primary fw-bold text-uppercase d-block mb-1" style="font-size: 0.65rem;">Home & Living</small>
+            <h6 class="fw-bold text-dark mb-1">Flower Table Lamp</h6>
+            <p class="text-secondary small mb-3">Warm ambient lighting for slower evenings.</p>
+            <div class="mt-auto pt-2">
+              <span class="fw-bold fs-5 text-dark d-block mb-2">&#2547;2,050</span>
+              <button
+                                    class="btn btn-dark w-100 py-2 rounded-3 fw-medium d-flex align-items-center justify-content-center gap-2">
+                                    <i class="fa-solid fa-plus"></i> Add to cart
+                                </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Similar Item 3 -->
+      <div class="col">
+        <div class="card border rounded-4 p-3 shadow-sm d-flex flex-column h-100 bg-white">
+          <div class="position-relative bg-light rounded-4 overflow-hidden mb-3" style="height: 220px;">
+            <button onclick="this.querySelector('i').classList.toggle('fa-solid'); this.querySelector('i').classList.toggle('fa-regular'); this.querySelector('i').classList.toggle('text-danger')" class="position-absolute top-0 end-0 m-2 btn btn-light rounded-circle shadow-sm p-0 d-flex align-items-center justify-content-center border-danger" style="width: 36px; height: 36px;">
+              <i class="fa-regular fa-heart text-danger"></i>
+            </button>
+            <img src="image/shoe.jpg" alt="Shoe" class="w-100 h-100 object-fit-cover">
+          </div>
+          <div class="card-body p-0 d-flex flex-column flex-grow-1">
+            <small class="text-primary fw-bold text-uppercase d-block mb-1" style="font-size: 0.65rem;">Sports</small>
+            <h6 class="fw-bold text-dark mb-1">Nike Running Shoe</h6>
+            <p class="text-secondary small mb-3">Lightweight breathable sports sneakers.</p>
+            <div class="mt-auto pt-2">
+              <span class="fw-bold fs-5 text-dark d-block mb-2">&#2547;2,050</span>
+              <button
+                                    class="btn btn-dark w-100 py-2 rounded-3 fw-medium d-flex align-items-center justify-content-center gap-2">
+                                    <i class="fa-solid fa-plus"></i> Add to cart
+                                </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Similar Item 4 -->
+      <div class="col">
+        <div class="card border rounded-4 p-3 shadow-sm d-flex flex-column h-100 bg-white">
+          <div class="position-relative bg-light rounded-4 overflow-hidden mb-3" style="height: 220px;">
+            <span class="position-absolute top-0 start-0 m-2 badge bg-primary text-white fw-bold px-2 py-1 rounded-2">NEW</span>
+            <button onclick="this.querySelector('i').classList.toggle('fa-solid'); this.querySelector('i').classList.toggle('fa-regular'); this.querySelector('i').classList.toggle('text-danger')" class="position-absolute top-0 end-0 m-2 btn btn-light rounded-circle shadow-sm p-0 d-flex align-items-center justify-content-center border-danger" style="width: 36px; height: 36px;">
+              <i class="fa-regular fa-heart text-danger"></i>
+            </button>
+            <img src="image/headphones.jpg" alt="Earbuds" class="w-100 h-100 object-fit-cover">
+          </div>
+          <div class="card-body p-0 d-flex flex-column flex-grow-1">
+            <small class="text-primary fw-bold text-uppercase d-block mb-1" style="font-size: 0.65rem;">Tech & Gadgets</small>
+            <h6 class="fw-bold text-dark mb-1">Wireless Earbuds Pro</h6>
+            <p class="text-secondary small mb-3">Compact wireless charging bluetooth buds.</p>
+            <div class="mt-auto pt-2">
+              <span class="fw-bold fs-5 text-dark d-block mb-2">&#2547;3,200</span>
+              <button
+                                    class="btn btn-dark w-100 py-2 rounded-3 fw-medium d-flex align-items-center justify-content-center gap-2">
+                                    <i class="fa-solid fa-plus"></i> Add to cart
+                                </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+
+
+
+
+
+        <footer class="bg-dark text-white py-5 px-4">
+        <div class="container-fluid">
+            <div class="row g-4">
+
+                <!-- Column 1: Brand, Socials & Payments -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="d-flex align-items-center gap-2 mb-3">
+                        <a href="#"><img src="image/footer-logo.png" height="50px" width="150px" alt="Header-logo"></a>
+                    </div>
+                    <p class="text-secondary small mb-4">Good things for everyday living. Find your next favourite thing
+                        with Friday.</p>
+
+                    <div class="d-flex gap-2 mb-4">
+                        <a href="#"
+                            class="btn btn-outline-secondary rounded-3 d-flex align-items-center justify-content-center p-0"
+                            style="width: 38px; height: 38px;"><i class="fa-brands fa-instagram text-white"></i></a>
+                        <a href="#"
+                            class="btn btn-outline-secondary rounded-3 d-flex align-items-center justify-content-center p-0"
+                            style="width: 38px; height: 38px;"><i class="fa-brands fa-facebook-f text-white"></i></a>
+                        <a href="#"
+                            class="btn btn-outline-secondary rounded-3 d-flex align-items-center justify-content-center p-0"
+                            style="width: 38px; height: 38px;"><i class="fa-brands fa-tiktok text-white"></i></a>
+                        <a href="#"
+                            class="btn btn-outline-secondary rounded-3 d-flex align-items-center justify-content-center p-0"
+                            style="width: 38px; height: 38px;"><i class="fa-brands fa-pinterest-p text-white"></i></a>
+                    </div>
+
+                    <small class="text-secondary d-block mb-2">Secure payments</small>
+                    <div class="d-flex flex-wrap gap-2">
+                        <span class="badge bg-white text-dark px-2 py-1 fw-bold">VISA</span>
+                        <span class="badge bg-white text-dark px-2 py-1 fw-bold">mastercard</span>
+                        <span class="badge bg-white text-dark px-2 py-1 fw-bold">bKash</span>
+                        <span class="badge bg-white text-dark px-2 py-1 fw-bold">Nagad</span>
+                    </div>
+                </div>
+
+                <!-- Column 2: Shop -->
+                <div class="col-lg-2 col-md-3 col-6">
+                    <h6 class="fw-bold text-white mb-3">Shop</h6>
+                    <ul class="list-unstyled d-flex flex-column gap-2 small">
+                        <li><a href="#" class="text-secondary text-decoration-none">All products</a></li>
+                        <li><a href="best_sells.html" class="text-secondary text-decoration-none">Best sellers</a></li>
+                        <li><a href="#" class="text-secondary text-decoration-none">Discounts</a></li>
+                        <li><a href="#" class="text-secondary text-decoration-none">Bundles & gifts</a></li>
+                        <li><a href="#" class="text-secondary text-decoration-none">Your wishlist</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Customer care -->
+                <div class="col-lg-2 col-md-3 col-6">
+                    <h6 class="fw-bold text-white mb-3">Customer care</h6>
+                    <ul class="list-unstyled d-flex flex-column gap-2 small">
+                        <li><a href="#" class="text-secondary text-decoration-none">Contact us</a></li>
+                        <li><a href="#" class="text-secondary text-decoration-none">Shipping & delivery</a></li>
+                        <li><a href="#" class="text-secondary text-decoration-none">Returns & refunds</a></li>
+                        <li><a href="#" class="text-secondary text-decoration-none">Track your order</a></li>
+                        <li><a href="#" class="text-secondary text-decoration-none">Message a seller</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 4: About Friday -->
+                <div class="col-lg-2 col-md-3 col-6">
+                    <h6 class="fw-bold text-white mb-3">About Friday</h6>
+                    <ul class="list-unstyled d-flex flex-column gap-2 small">
+                        <li><a href="#" class="text-secondary text-decoration-none">Our story</a></li>
+                        <li><a href="#" class="text-secondary text-decoration-none">Become a seller</a></li>
+                        <li><a href="#" class="text-secondary text-decoration-none">Careers</a></li>
+                        <li><a href="#" class="text-secondary text-decoration-none">Sustainability</a></li>
+                        <li><a href="#" class="text-secondary text-decoration-none">Press & partnerships</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 5: Need a hand? -->
+                <div class="col-lg-3 col-md-6 col-6">
+                    <h6 class="fw-bold text-white mb-3">Need a hand?</h6>
+                    <p class="text-secondary small mb-3">We're here to help you find the good stuff.</p>
+
+                    <div class="d-flex align-items-center gap-2 text-secondary small mb-2">
+                        <i class="fa-regular fa-envelope text-white"></i>
+                        <span>info.friday@gmail.com</span>
+                    </div>
+                    <div class="d-flex align-items-center gap-2 text-secondary small mb-4">
+                        <i class="fa-solid fa-phone text-white"></i>
+                        <span>+880 15000 000000</span>
+                    </div>
+
+                    <button
+                        class="btn btn-outline-secondary text-white btn-sm rounded-pill px-3 py-2 d-inline-flex align-items-center gap-2 border-secondary">
+                        <i class="fa-solid fa-globe"></i> Bangladesh &bull; BDT
+                    </button>
+                </div>
+
+            </div>
+        </div>
+
+    </footer>
+    <!-- small-footer -->
+    <div class="bg-dark text-secondary py-4 mb-3 small">
+
+        <div class="container-fluid">
+            <hr class="py-0 mx-5">
+            <div class="row align-items-center gy-3">
+
+                <!-- Copyright -->
+                <div class="col text-start">
+                    <span>&copy; 2026 Friday. All rights reserved.</span>
+                </div>
+
+                <!-- Links -->
+                <div class="col text-center">
+                    <div class="d-flex justify-content-center  gap-4">
+                        <a href="#" class="text-secondary text-decoration-none">Privacy policy</a>
+                        <a href="#" class="text-secondary text-decoration-none">Terms & conditions</a>
+                        <a href="#" class="text-secondary text-decoration-none">Cookie settings</a>
+                        <a href="#" class="text-secondary text-decoration-none">Accessibility</a>
+                    </div>
+                </div>
+
+
+                <div class="col text-end">
+                    <span>Made for better finds <i class="fa-solid fa-heart text-primary"></i></span>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="fixed-bottom bg-dark text-white py-0 shadow-lg border-top border-secondary border-opacity-25"
+        style="z-index: 1050;">
+        <marquee behavior="scroll" direction="left" scrollamount="6" class="m-0 fw-medium small">
+            <span class="mx-4"><i class="fa-solid fa-truck-fast text-primary me-2"></i> Free shipping on all orders over
+                &#2547;2000!</span>
+            <span class="mx-4"><i class="fa-solid fa-bolt text-warning me-2"></i> Flash Sale: Up to 40% off on Tech &
+                Gadgets!</span>
+            <span class="mx-4"><i class="fa-solid fa-rotate-left text-success me-2"></i> Easy 7-day hassle-free
+                returns</span>
+                <span class="mx-4"><i class="fa-solid fa-truck-fast text-primary me-2"></i> Free shipping on all orders over
+                &#2547;2000!</span>
+            <span class="mx-4"><i class="fa-solid fa-bolt text-warning me-2"></i> Flash Sale: Up to 40% off on Tech &
+                Gadgets!</span>
+            <span class="mx-4"><i class="fa-solid fa-rotate-left text-success me-2"></i> Easy 7-day hassle-free
+                returns</span>
+                <span class="mx-4"><i class="fa-solid fa-truck-fast text-primary me-2"></i> Free shipping on all orders over
+                &#2547;2000!</span>
+            <span class="mx-4"><i class="fa-solid fa-bolt text-warning me-2"></i> Flash Sale: Up to 40% off on Tech &
+                Gadgets!</span>
+            <span class="mx-4"><i class="fa-solid fa-rotate-left text-success me-2"></i> Easy 7-day hassle-free
+                returns</span>
+        </marquee>
+    </div>
+    <!-- Bootstrap 5 JS Bundle CDN (Optional) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      const products = {
+        'wireless-headphones': {
+          name: 'Wireless Noise-Canceling Headphones',
+          category: 'Tech & Gadgets',
+          categoryHref: 'best_sells.html#tech-gadgets',
+          image: 'image/headphones.jpg',
+          rating: '4.7',
+          reviewCount: 128,
+          price: 4050,
+          originalPrice: 4950,
+          discount: 18,
+          badge: 'BEST SELLER',
+          description: 'Experience premium active noise cancellation with up to 30 hours of continuous playback. Designed with comfortable memory foam cushions and high-fidelity acoustic drivers.',
+          longDescription: 'Enjoy rich, balanced audio and focus on what matters with active noise cancellation. Soft memory foam ear cushions and a long-lasting battery make these headphones comfortable for travel, work, and everyday listening.',
+          variantLabel: 'Select Color',
+          variants: ['Matte Black', 'Silver Gray'],
+          specifications: [['Audio', 'Active noise cancellation'], ['Battery life', 'Up to 30 hours'], ['Fit', 'Memory foam cushions']]
+        },
+        'sports-watch': {
+          name: 'Sports Watch',
+          category: 'Sports',
+          categoryHref: 'best_sells.html#sports',
+          image: 'image/watch.jpg',
+          rating: '4.8',
+          reviewCount: 96,
+          price: 1550,
+          originalPrice: 2250,
+          discount: 31,
+          badge: 'TOP RATED',
+          description: 'Keep your daily training on track with a comfortable, water-resistant sports watch made for an active routine.',
+          longDescription: 'A practical everyday sports watch with a comfortable strap and a clear, easy-to-read display. Ready for workouts, weekend adventures, and daily wear.',
+          variantLabel: 'Select Color',
+          variants: ['Brown', 'Green'],
+          specifications: [['Features', 'Fitness tracking'], ['Design', 'Water-resistant'], ['Use', 'Sports and everyday wear']]
+        },
+        'flower-table-lamp': {
+          name: 'Flower Table Lamp',
+          category: 'Home & Living',
+          categoryHref: 'best_sells.html#home-living',
+          image: 'image/lamp.jpg',
+          rating: '4.9',
+          reviewCount: 74,
+          price: 2050,
+          originalPrice: 2600,
+          discount: 21,
+          badge: 'BEST SELL',
+          description: 'Add a warm, gentle glow to your room with a flower-inspired table lamp that makes evenings feel more inviting.',
+          longDescription: 'A decorative accent and a useful source of ambient light in one. Its flower-inspired design makes it an easy fit for a bedside table, desk, or cozy reading corner.',
+          variantLabel: 'Select Light Tone',
+          variants: ['Warm White', 'Soft White'],
+          specifications: [['Design', 'Flower-inspired table lamp'], ['Lighting', 'Warm ambient light'], ['Use', 'Indoor lighting']]
+        },
+        'everyday-sneakers': {
+          name: 'Everyday Sneakers',
+          category: 'Sports',
+          categoryHref: 'best_sells.html#sports',
+          image: 'image/shoe.jpg',
+          rating: '4.6',
+          reviewCount: 52,
+          price: null,
+          originalPrice: null,
+          discount: null,
+          badge: 'SHOP FAVORITE',
+          description: 'Lightweight everyday sneakers designed for comfortable walks and an easy, casual look.',
+          longDescription: 'A versatile pair for everyday errands and casual outings. Check with the seller for current sizes and pricing before ordering.',
+          variantLabel: 'Select Size',
+          variants: ['38', '39', '40', '41'],
+          specifications: [['Style', 'Everyday casual'], ['Fit', 'Choose your usual size'], ['Availability', 'Confirm size with seller']]
+        }
+      };
+
+      const queryProduct = new URLSearchParams(window.location.search).get('product') || 'wireless-headphones';
+      const product = products[queryProduct] || products['wireless-headphones'];
+      const formatPrice = (price) => `\u09F3${price.toLocaleString('en-BD')}`;
+
+      document.title = `${product.name} | Friday`;
+      document.getElementById('productName').textContent = product.name;
+      document.getElementById('productBreadcrumb').textContent = product.name;
+      document.getElementById('productCategory').textContent = product.category;
+      document.getElementById('productCategoryLink').textContent = product.category;
+      document.getElementById('productCategoryLink').href = product.categoryHref;
+      document.getElementById('mainProductImg').src = product.image;
+      document.getElementById('mainProductImg').alt = product.name;
+      document.getElementById('productBadge').textContent = product.badge;
+      document.getElementById('productRating').textContent = product.rating;
+      document.getElementById('productReviewCount').textContent = `• ${product.reviewCount} Customer Reviews`;
+      document.getElementById('productDescription').textContent = product.description;
+      document.getElementById('productLongDescription').textContent = product.longDescription;
+      document.getElementById('productDetailsHeading').textContent = `About ${product.name}`;
+
+      const price = document.getElementById('productPrice');
+      const originalPrice = document.getElementById('productOriginalPrice');
+      const discount = document.getElementById('productDiscount');
+      if (product.price === null) {
+        price.textContent = 'Check seller for price';
+        price.classList.add('fs-4');
+        originalPrice.hidden = true;
+        discount.hidden = true;
+        document.getElementById('addToCartButton').disabled = true;
+        document.getElementById('addToCartButton').textContent = 'Price unavailable';
+      } else {
+        price.textContent = formatPrice(product.price);
+        originalPrice.textContent = formatPrice(product.originalPrice);
+        discount.textContent = `${product.discount}% OFF`;
+      }
+
+      const variantsContainer = document.getElementById('productVariants');
+      document.getElementById('productVariantLabel').textContent = product.variantLabel;
+      product.variants.forEach((variant, index) => {
+        const id = `productVariant${index}`;
+        const input = document.createElement('input');
+        input.type = 'radio';
+        input.className = 'btn-check';
+        input.name = 'productVariant';
+        input.id = id;
+        input.value = variant;
+        input.required = true;
+        input.checked = index === 0;
+
+        const label = document.createElement('label');
+        label.className = 'btn btn-outline-dark btn-sm rounded-pill px-3';
+        label.htmlFor = id;
+        label.textContent = variant;
+        variantsContainer.append(input, label);
+      });
+
+      const specifications = document.getElementById('productSpecifications');
+      product.specifications.forEach(([label, value]) => {
+        const term = document.createElement('dt');
+        term.className = 'col-sm-4 text-secondary fw-normal py-2 border-bottom';
+        term.textContent = label;
+        const description = document.createElement('dd');
+        description.className = 'col-sm-8 text-dark fw-semibold py-2 border-bottom mb-0';
+        description.textContent = value;
+        specifications.append(term, description);
+      });
+
+      const quantity = document.getElementById('productQuantity');
+      document.getElementById('quantityDecrease').addEventListener('click', () => {
+        quantity.value = Math.max(1, Number(quantity.value) - 1);
+      });
+      document.getElementById('quantityIncrease').addEventListener('click', () => {
+        quantity.value = Math.min(10, Number(quantity.value) + 1);
+      });
+      quantity.addEventListener('change', () => {
+        quantity.value = Math.min(10, Math.max(1, Number(quantity.value) || 1));
+      });
+
+      document.getElementById('wishlistButton').addEventListener('click', (event) => {
+        const button = event.currentTarget;
+        const icon = button.querySelector('i');
+        const isSaved = button.getAttribute('aria-pressed') !== 'true';
+        button.setAttribute('aria-pressed', String(isSaved));
+        button.setAttribute('aria-label', isSaved ? 'Remove from wishlist' : 'Add to wishlist');
+        icon.classList.toggle('fa-solid', isSaved);
+        icon.classList.toggle('fa-regular', !isSaved);
+      });
+
+      document.getElementById('addToCartButton').addEventListener('click', () => {
+        const selectedVariant = document.querySelector('input[name="productVariant"]:checked');
+        const cartFeedback = document.getElementById('cartFeedback');
+        cartFeedback.textContent = `Added ${quantity.value} × ${product.name}${selectedVariant ? ` (${selectedVariant.value})` : ''} to your cart.`;
+      });
+    </script>
+</body>
+
+</html>

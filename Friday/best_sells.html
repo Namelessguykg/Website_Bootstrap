@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Best Sells | Friday</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+    integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="container-fluid bg-dark">
+    <div class="row mx-lg-5 px-lg-5">
+      <div class="col-4 d-flex justify-content-start">
+        <a class="text-decoration-none text-light" href="index.html">Friday</a>
+      </div>
+      <div class="col-4 d-flex justify-content-center">
+        <a class="text-decoration-none text-light" href="account_type_change.html">Become a Seller</a>
+      </div>
+      <div class="col-4 d-flex justify-content-end">
+        <a class="text-decoration-none text-light" href="help.html">Help</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="mx-lg-5 px-lg-5">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img src="image/logo.png" height="50" width="150" alt="Friday home">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+            <li class="nav-item"><a class="nav-link" href="sellers.html">SELLERS</a></li>
+            <li class="nav-item"><a class="nav-link" href="on_discount.html">ON DISCOUNTS</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="seller_shop.html" id="navbarDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">CATEGORIES</a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="best_sells.html#sports">SPORTS</a></li>
+                <li><a class="dropdown-item" href="best_sells.html#tech-gadgets">TECH & GADGETS</a></li>
+                <li><a class="dropdown-item" href="best_sells.html#home-living">HOME & LIVING</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="todays_deal.html">TODAY'S DEAL</a></li>
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="best_sells.html">BEST SELLS</a>
+            </li>
+          </ul>
+          <a href="cart.html" class="mx-2 text-black" aria-label="Shopping cart"><i
+              class="fa-solid fa-cart-shopping fa-xl"></i></a>
+          <a href="wishlist.html" class="mx-2 text-black" aria-label="Wishlist"><i
+              class="fa-solid fa-heart fa-xl"></i></a>
+          <a href="profile_customer.html" class="mx-2 text-black" aria-label="Customer profile"><i
+              class="fa-solid fa-circle-user fa-xl"></i></a>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <main class="container py-4 py-md-5">
+    <section class="bg-light border rounded-5 p-4 p-md-5 mb-5">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-7">
+          <span class="badge bg-primary-subtle text-primary rounded-pill px-3 py-2 mb-3">
+            <i class="fa-solid fa-fire me-1"></i> CUSTOMER FAVORITES
+          </span>
+          <h1 class="display-5 fw-bold text-dark mb-3">Best Sells</h1>
+          <p class="lead text-secondary mb-4">Shop Friday's most-loved finds, picked from customer favorites across the
+            marketplace.</p>
+          <a href="#best-products" class="btn btn-dark rounded-pill px-4 py-2">Explore best sellers <i
+              class="fa-solid fa-arrow-down ms-1"></i></a>
+        </div>
+        <div class="col-lg-5 text-center">
+          <img src="image/headphones.jpg" alt="Top-selling headphones" class="img-fluid rounded-4 shadow-sm"
+            style="max-height: 260px;">
+        </div>
+      </div>
+    </section>
+
+    <nav class="card border rounded-4 p-3 shadow-sm mb-5" aria-label="Best-selling product categories">
+      <div class="d-flex flex-wrap gap-2">
+        <a class="btn btn-primary rounded-pill px-3" href="#best-products">All Best Sells</a>
+        <a class="btn btn-outline-secondary rounded-pill px-3" href="#tech-gadgets">Tech & Gadgets</a>
+        <a class="btn btn-outline-secondary rounded-pill px-3" href="#home-living">Home & Living</a>
+        <a class="btn btn-outline-secondary rounded-pill px-3" href="#sports">Sports</a>
+      </div>
+    </nav>
+
+    <section id="best-products" class="mb-5">
+      <div class="mb-4">
+        <small class="text-primary fw-bold text-uppercase">Trending now</small>
+        <h2 class="fw-bold text-dark mb-1">Customer favorites</h2>
+        <p class="text-secondary mb-0">Popular picks loved by Friday shoppers.</p>
+      </div>
+
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+        <div class="col" id="tech-gadgets">
+          <article class="card border rounded-4 p-3 shadow-sm h-100">
+            <a href="product_view.html?product=wireless-headphones" class="text-decoration-none">
+              <div class="position-relative bg-light rounded-4 overflow-hidden mb-3" style="height: 220px;">
+                <span class="position-absolute top-0 start-0 m-2 badge bg-dark">#1 BEST SELLER</span>
+                <img src="image/headphones.jpg" alt="Wireless headphones" class="w-100 h-100 object-fit-cover">
+              </div>
+              <small class="text-primary fw-bold text-uppercase">Tech & Gadgets</small>
+              <h3 class="h5 fw-bold text-dark mt-1 mb-2">Wireless Headphones</h3>
+            </a>
+            <div class="text-warning small mb-2" aria-label="Rated 4.7 out of 5">
+              <i class="fa-solid fa-star"></i> <span class="text-dark fw-semibold">4.7</span>
+              <span class="text-secondary">(128 reviews)</span>
+            </div>
+            <div class="mt-auto">
+              <p class="fw-bold fs-5 text-dark mb-3">&#2547;4,050</p>
+              <div class="d-flex gap-2">
+                <button
+                  class="btn btn-dark w-100 py-2 rounded-3 fw-medium d-flex align-items-center justify-content-center gap-2">
+                  <i class="fa-solid fa-plus"></i> Add to cart
+                </button>
+
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="col" id="sports">
+          <article class="card border rounded-4 p-3 shadow-sm h-100">
+            <a href="product_view.html?product=sports-watch" class="text-decoration-none">
+              <div class="position-relative bg-light rounded-4 overflow-hidden mb-3" style="height: 220px;">
+                <span class="position-absolute top-0 start-0 m-2 badge bg-dark">TOP RATED</span>
+                <img src="image/watch.jpg" alt="Sports watch" class="w-100 h-100 object-fit-cover">
+              </div>
+              <small class="text-primary fw-bold text-uppercase">Sports</small>
+              <h3 class="h5 fw-bold text-dark mt-1 mb-2">Sports Watch</h3>
+            </a>
+            <div class="text-warning small mb-2" aria-label="Rated 4.8 out of 5">
+              <i class="fa-solid fa-star"></i> <span class="text-dark fw-semibold">4.8</span>
+              <span class="text-secondary">(96 reviews)</span>
+            </div>
+            <div class="mt-auto">
+              <p class="fw-bold fs-5 text-dark mb-3">&#2547;1,550</p>
+              <div class="d-flex gap-2">
+                <button
+                  class="btn btn-dark w-100 py-2 rounded-3 fw-medium d-flex align-items-center justify-content-center gap-2">
+                  <i class="fa-solid fa-plus"></i> Add to cart
+                </button>
+
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="col" id="home-living">
+          <article class="card border rounded-4 p-3 shadow-sm h-100">
+            <a href="product_view.html?product=flower-table-lamp" class="text-decoration-none">
+              <div class="position-relative bg-light rounded-4 overflow-hidden mb-3" style="height: 220px;">
+                <span class="position-absolute top-0 start-0 m-2 badge bg-dark">BEST SELL</span>
+                <img src="image/lamp.jpg" alt="Flower table lamp" class="w-100 h-100 object-fit-cover">
+              </div>
+              <small class="text-primary fw-bold text-uppercase">Home & Living</small>
+              <h3 class="h5 fw-bold text-dark mt-1 mb-2">Flower Table Lamp</h3>
+            </a>
+            <div class="text-warning small mb-2" aria-label="Rated 4.9 out of 5">
+              <i class="fa-solid fa-star"></i> <span class="text-dark fw-semibold">4.9</span>
+              <span class="text-secondary">(74 reviews)</span>
+            </div>
+            <div class="mt-auto">
+              <p class="fw-bold fs-5 text-dark mb-3">&#2547;2,050</p>
+              <div class="d-flex gap-2">
+                <button
+                  class="btn btn-dark w-100 py-2 rounded-3 fw-medium d-flex align-items-center justify-content-center gap-2">
+                  <i class="fa-solid fa-plus"></i> Add to cart
+                </button>
+
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="col">
+          <article class="card border rounded-4 p-3 shadow-sm h-100">
+            <a href="product_view.html?product=everyday-sneakers" class="text-decoration-none">
+              <div class="position-relative bg-light rounded-4 overflow-hidden mb-3" style="height: 220px;">
+                <span class="position-absolute top-0 start-0 m-2 badge bg-dark">SHOP FAVORITE</span>
+                <img src="image/shoe.jpg" alt="Everyday sneakers" class="w-100 h-100 object-fit-cover">
+              </div>
+              <small class="text-primary fw-bold text-uppercase">Sports</small>
+              <h3 class="h5 fw-bold text-dark mt-1 mb-2">Everyday Sneakers</h3>
+            </a>
+            <div class="text-warning small mb-2" aria-label="Rated 4.6 out of 5">
+              <i class="fa-solid fa-star"></i> <span class="text-dark fw-semibold">4.6</span>
+              <span class="text-secondary">(52 reviews)</span>
+            </div>
+            <div class="mt-auto">
+              <p class="fw-bold fs-5 text-dark mb-3">&#2547;2,050</p>
+              <div class="d-flex gap-2">
+                <button
+                  class="btn btn-dark w-100 py-2 rounded-3 fw-medium d-flex align-items-center justify-content-center gap-2">
+                  <i class="fa-solid fa-plus"></i> Add to cart
+                </button>
+
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="card border-0 rounded-4 bg-primary-subtle p-4 p-md-5 text-center">
+      <h2 class="h3 fw-bold text-dark">Find your next favorite</h2>
+      <p class="text-secondary mb-4">Browse every shop or keep exploring Friday's latest products.</p>
+      <div class="d-flex flex-wrap justify-content-center gap-2">
+        <a href="sellers.html" class="btn btn-outline-dark rounded-pill px-4">Browse sellers</a>
+        <a href="index.html#products" class="btn btn-primary rounded-pill px-4">Shop all products</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-dark text-white py-5 px-4">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <a href="index.html"><img src="image/footer-logo.png" height="50" width="150" alt="Friday home"></a>
+          <p class="text-secondary small mt-3">Good things for everyday living. Find your next favourite thing with
+            Friday.</p>
+        </div>
+        <div class="col-6 col-lg-2">
+          <h2 class="h6 fw-bold">Shop</h2>
+          <ul class="list-unstyled small d-grid gap-2">
+            <li><a href="index.html#products" class="text-secondary text-decoration-none">All products</a></li>
+            <li><a href="best_sells.html" class="text-secondary text-decoration-none">Best sells</a></li>
+            <li><a href="on_discount.html" class="text-secondary text-decoration-none">On discount</a></li>
+            <li><a href="todays_deal.html" class="text-secondary text-decoration-none">Today's deal</a></li>
+            <li><a href="wishlist.html" class="text-secondary text-decoration-none">Wishlist</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-3">
+          <h2 class="h6 fw-bold">Customer care</h2>
+          <ul class="list-unstyled small d-grid gap-2">
+            <li><a href="help.html" class="text-secondary text-decoration-none">Help center</a></li>
+            <li><a href="live_chat.html" class="text-secondary text-decoration-none">Message a seller</a></li>
+            <li><a href="profile_customer.html" class="text-secondary text-decoration-none">My account</a></li>
+            <li><a href="cart.html" class="text-secondary text-decoration-none">Shopping cart</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3">
+          <a href="account_type_change.html" class="btn btn-outline-light rounded-pill">Become a seller</a>
+        </div>
+      </div>
+      <hr class="border-secondary my-4">
+      <p class="small text-secondary mb-0">&copy; 2026 Friday. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

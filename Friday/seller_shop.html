@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Announcement Bar</title>
+    <!-- Bootstrap 5 CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+        integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Announcement Bar -->
+    <div class="container-fluid bg-dark">
+        <div class="row mx-lg-5 px-lg-5">
+            <div class="col-4 d-flex justify-content-start">
+                <div><a class=" text-decoration-none text-light" href="index.html">Friday</a></div>
+
+            </div>
+            <div class="col-4 d-flex justify-content-center">
+                <div><a class="text-decoration-none text-light mx-auto" href="account_type_change.html">Become a Seller</a></div>
+
+            </div>
+            <div class="col-4 d-flex justify-content-end">
+                <div><a class="text-decoration-none text-light" href="help.html">Help</a></div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- Nav bar -->
+    <div class="mx-lg-5 px-lg-5">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"><img src="image/logo.png" height="50px" width="150px"
+                        alt="Header-logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav  me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="sellers.html">SELLERS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="on_discount.html">ON DISCOUNTS</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="seller_shop.html" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                CATAGORIES
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="seller_shop.html">SPORTS</a></li>
+                                <li><a class="dropdown-item" href="seller_shop.html">TECH & GADGETS</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="seller_shop.html">+ ADD MORE</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="todays_deal.html">TODAY'S DEAL</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="best_sells.html">BEST SELLS</a>
+                        </li>
+
+                    </ul>
+                    <div class="collapse collapse-horizontal" id="search">
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2 mb-2" type="search" placeholder="Search"
+                                aria-label="Search" />
+                        </form>
+                    </div>
+                    <a href="#search" class="mx-1 text-black" data-bs-toggle="collapse" role="button"
+                        aria-expanded="false"><i class="fa-solid fa-magnifying-glass fa-xl"></i></a>
+                    <a href="cart.html" class="mx-1 text-black"><i class="fa-solid fa-cart-shopping fa-xl"></i></a>
+                    <a href="wishlist.html" class="mx-1 text-black" aria-label="Wishlist"><i class="fa-solid fa-heart fa-xl"></i></a>
+                    <a href="profile_customer.html" class="mx-1 text-black"><i class="fa-solid fa-circle-user fa-xl"></i></a>
+                </div>
+            </div>
+    </div>
+    </nav>
+    </div>
+
+
+<div class="container py-4">
+  
+  <!-- Store Hero Banner Card -->
+  <div class="card border-0 rounded-5 shadow-sm overflow-hidden mb-4">
+    <!-- Cover Image -->
+    <div class="position-relative bg-dark" style="height: 200px; background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.6)), url('image/store-cover.jpg') center/cover no-repeat;">
+      <span class="badge bg-success position-absolute top-0 end-0 m-4 px-3 py-2 rounded-pill"><i class="fa-solid fa-circle-check me-1"></i> Verified Official Store</span>
+    </div>
+
+    <!-- Store Info Header Bar -->
+    <div class="card-body p-4 p-md-5 bg-white position-relative">
+      <div class="d-flex flex-wrap align-items-end justify-content-between gap-4" style="margin-top: -80px;">
+        
+        <!-- Store Logo & Title -->
+        <div class="d-flex align-items-end gap-3">
+          <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center fw-bold fs-1 shadow-lg border border-4 border-white" style="width: 110px; height: 110px; flex-shrink: 0;">
+            F
+          </div>
+          <div>
+            <h2 class="fw-bold text-dark mb-1">Friday Official Store</h2>
+            <p class="text-secondary small mb-2"><i class="fa-solid fa-location-dot me-1 text-danger"></i> Dhaka, Bangladesh &bull; Joined Oct 2026</p>
+            
+            <div class="d-flex align-items-center gap-3 small text-secondary">
+              <span><i class="fa-solid fa-star text-warning"></i> <strong class="text-dark">4.9</strong> / 5.0 (120 Ratings)</span>
+              <span>&bull;</span>
+              <span><i class="fa-solid fa-users text-primary"></i> <strong class="text-dark">2.4k</strong> Followers</span>
+              <span>&bull;</span>
+              <span><i class="fa-solid fa-boxes-stacked text-primary"></i> <strong class="text-dark">48</strong> Products</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Store Actions -->
+        <div class="d-flex gap-2 ms-auto">
+          <button class="btn btn-outline-primary rounded-pill px-4 fw-medium"><i class="fa-regular fa-comments me-1"></i> Chat with Seller</button>
+          <button class="btn btn-primary rounded-pill px-4 fw-medium"><i class="fa-solid fa-plus me-1"></i> Follow Store</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Store Search & Category Filter Navigation Bar -->
+  <div class="card border rounded-4 p-3 shadow-sm mb-4">
+    <div class="row g-3 align-items-center">
+      <div class="col-md-8">
+        <ul class="nav nav-pills gap-2" id="storeTabs">
+          <li class="nav-item"><a class="nav-link active rounded-pill px-3" href="#products">All Products (48)</a></li>
+          <li class="nav-item"><a class="nav-link text-dark rounded-pill px-3" href="#products">Tech & Gadgets</a></li>
+          <li class="nav-item"><a class="nav-link text-dark rounded-pill px-3" href="#products">Home & Living</a></li>
+          <li class="nav-item"><a class="nav-link text-dark rounded-pill px-3" href="#products">On Discount</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <div class="input-group">
+          <input type="text" class="form-control form-control-sm rounded-start-pill ps-3" placeholder="Search in this store...">
+          <button class="btn btn-dark btn-sm rounded-end-pill px-3"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Store Products Grid -->
+  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 mb-5" id="products">
+    
+    <!-- Item 1 -->
+    <div class="col">
+      <div class="card border rounded-4 p-3 shadow-sm d-flex flex-column h-100 product-hover">
+        <div class="position-relative bg-light rounded-4 overflow-hidden mb-3" style="height: 220px;">
+          <span class="position-absolute top-0 start-0 m-2 badge bg-dark text-white fw-bold px-2 py-1 rounded-2">DEAL</span>
+          <img src="image/headphones.jpg" alt="Headphones" class="w-100 h-100 object-fit-cover">
+        </div>
+        <div class="card-body p-0 d-flex flex-column flex-grow-1">
+          <small class="text-primary fw-bold text-uppercase d-block mb-1" style="font-size: 0.7rem;">Tech & Gadgets</small>
+          <h5 class="fw-bold text-dark mb-1"><a href="product_view.html?product=wireless-headphones" class="text-dark text-decoration-none">Headphones</a></h5>
+          <p class="text-secondary small mb-3">Big sound in a compact design.</p>
+          
+          <div class="mt-auto">
+            <span class="fw-bold fs-4 text-dark d-block mb-2">&#2547;4050</span>
+            
+            <button class="btn btn-dark w-100 py-2 rounded-3 fw-medium d-flex align-items-center justify-content-center gap-2">
+              <i class="fa-solid fa-cart-shopping"></i> Add to cart
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Item 2 -->
+    <div class="col">
+      <div class="card border rounded-4 p-3 shadow-sm d-flex flex-column h-100 product-hover">
+        <div class="position-relative bg-light rounded-4 overflow-hidden mb-3" style="height: 220px;">
+          <span class="position-absolute top-0 start-0 m-2 badge bg-dark text-white fw-bold px-2 py-1 rounded-2">BEST SELL</span>
+          <img src="image/lamp.jpg" alt="Lamp" class="w-100 h-100 object-fit-cover">
+        </div>
+        <div class="card-body p-0 d-flex flex-column flex-grow-1">
+          <small class="text-primary fw-bold text-uppercase d-block mb-1" style="font-size: 0.7rem;">Home & Living</small>
+          <h5 class="fw-bold text-dark mb-1"><a href="product_view.html?product=flower-table-lamp" class="text-dark text-decoration-none">Lamp</a></h5>
+          <p class="text-secondary small mb-3">Warm ambient lighting for slower evenings.</p>
+          
+          <div class="mt-auto">
+            <span class="fw-bold fs-4 text-dark d-block mb-2">&#2547;2050</span>
+            
+            <button class="btn btn-dark w-100 py-2 rounded-3 fw-medium d-flex align-items-center justify-content-center gap-2">
+              <i class="fa-solid fa-cart-shopping"></i> Add to cart
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Recent Store Reviews Section -->
+  <div class="card border rounded-4 p-4 shadow-sm">
+    <h5 class="fw-bold text-dark mb-4"><i class="fa-regular fa-star text-warning me-2"></i> Recent Store Reviews</h5>
+    
+    <div class="vstack gap-3">
+      <div class="border-bottom pb-3">
+        <div class="d-flex justify-content-between align-items-center mb-1">
+          <span class="fw-bold text-dark small">Khandaker Imran</span>
+          <span class="text-muted small">Oct 20, 2026</span>
+        </div>
+        <div class="text-warning small mb-1">
+          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+        </div>
+        <p class="text-secondary small mb-0">Fast delivery and packaging was extremely well protected. Highly recommended seller!</p>
+      </div>
+
+      <div class="pb-2">
+        <div class="d-flex justify-content-between align-items-center mb-1">
+          <span class="fw-bold text-dark small">Sultana Rahman</span>
+          <span class="text-muted small">Oct 18, 2026</span>
+        </div>
+        <div class="text-warning small mb-1">
+          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+        </div>
+        <p class="text-secondary small mb-0">The lamp works great. Beautiful design for the living room.</p>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+```
+
+
+
+
+
+
+
+
+        <footer class="bg-dark text-white py-5 px-4">
+        <div class="container-fluid">
+            <div class="row g-4">
+
+                <!-- Column 1: Brand, Socials & Payments -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="d-flex align-items-center gap-2 mb-3">
+                        <a href="index.html"><img src="image/footer-logo.png" height="50px" width="150px" alt="Header-logo"></a>
+                    </div>
+                    <p class="text-secondary small mb-4">Good things for everyday living. Find your next favourite thing
+                        with Friday.</p>
+
+                    <div class="d-flex gap-2 mb-4">
+                        <a href="#"
+                            class="btn btn-outline-secondary rounded-3 d-flex align-items-center justify-content-center p-0"
+                            style="width: 38px; height: 38px;"><i class="fa-brands fa-instagram text-white"></i></a>
+                        <a href="#"
+                            class="btn btn-outline-secondary rounded-3 d-flex align-items-center justify-content-center p-0"
+                            style="width: 38px; height: 38px;"><i class="fa-brands fa-facebook-f text-white"></i></a>
+                        <a href="#"
+                            class="btn btn-outline-secondary rounded-3 d-flex align-items-center justify-content-center p-0"
+                            style="width: 38px; height: 38px;"><i class="fa-brands fa-tiktok text-white"></i></a>
+                        <a href="#"
+                            class="btn btn-outline-secondary rounded-3 d-flex align-items-center justify-content-center p-0"
+                            style="width: 38px; height: 38px;"><i class="fa-brands fa-pinterest-p text-white"></i></a>
+                    </div>
+
+                    <small class="text-secondary d-block mb-2">Secure payments</small>
+                    <div class="d-flex flex-wrap gap-2">
+                        <span class="badge bg-white text-dark px-2 py-1 fw-bold">VISA</span>
+                        <span class="badge bg-white text-dark px-2 py-1 fw-bold">mastercard</span>
+                        <span class="badge bg-white text-dark px-2 py-1 fw-bold">bKash</span>
+                        <span class="badge bg-white text-dark px-2 py-1 fw-bold">Nagad</span>
+                    </div>
+                </div>
+
+                <!-- Column 2: Shop -->
+                <div class="col-lg-2 col-md-3 col-6">
+                    <h6 class="fw-bold text-white mb-3">Shop</h6>
+                    <ul class="list-unstyled d-flex flex-column gap-2 small">
+                        <li><a href="index.html#products" class="text-secondary text-decoration-none">All products</a></li>
+                        <li><a href="best_sells.html" class="text-secondary text-decoration-none">Best sellers</a></li>
+                        <li><a href="on_discount.html" class="text-secondary text-decoration-none">On discount</a></li>
+                        <li><a href="todays_deal.html" class="text-secondary text-decoration-none">Today's deal</a></li>
+                        <li><a href="index.html#products" class="text-secondary text-decoration-none">Bundles & gifts</a></li>
+                        <li><a href="wishlist.html" class="text-secondary text-decoration-none">Your wishlist</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Customer care -->
+                <div class="col-lg-2 col-md-3 col-6">
+                    <h6 class="fw-bold text-white mb-3">Customer care</h6>
+                    <ul class="list-unstyled d-flex flex-column gap-2 small">
+                        <li><a href="help.html" class="text-secondary text-decoration-none">Contact us</a></li>
+                        <li><a href="help.html" class="text-secondary text-decoration-none">Shipping & delivery</a></li>
+                        <li><a href="help.html" class="text-secondary text-decoration-none">Returns & refunds</a></li>
+                        <li><a href="profile_customer.html#history-tab" class="text-secondary text-decoration-none">Track your order</a></li>
+                        <li><a href="live_chat.html" class="text-secondary text-decoration-none">Message a seller</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 4: About Friday -->
+                <div class="col-lg-2 col-md-3 col-6">
+                    <h6 class="fw-bold text-white mb-3">About Friday</h6>
+                    <ul class="list-unstyled d-flex flex-column gap-2 small">
+                        <li><a href="index.html" class="text-secondary text-decoration-none">Our story</a></li>
+                        <li><a href="account_type_change.html" class="text-secondary text-decoration-none">Become a seller</a></li>
+                        <li><a href="#" class="text-secondary text-decoration-none">Careers</a></li>
+                        <li><a href="#" class="text-secondary text-decoration-none">Sustainability</a></li>
+                        <li><a href="#" class="text-secondary text-decoration-none">Press & partnerships</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 5: Need a hand? -->
+                <div class="col-lg-3 col-md-6 col-6">
+                    <h6 class="fw-bold text-white mb-3">Need a hand?</h6>
+                    <p class="text-secondary small mb-3">We're here to help you find the good stuff.</p>
+
+                    <div class="d-flex align-items-center gap-2 text-secondary small mb-2">
+                        <i class="fa-regular fa-envelope text-white"></i>
+                        <span>info.friday@gmail.com</span>
+                    </div>
+                    <div class="d-flex align-items-center gap-2 text-secondary small mb-4">
+                        <i class="fa-solid fa-phone text-white"></i>
+                        <span>+880 15000 000000</span>
+                    </div>
+
+                    <button
+                        class="btn btn-outline-secondary text-white btn-sm rounded-pill px-3 py-2 d-inline-flex align-items-center gap-2 border-secondary">
+                        <i class="fa-solid fa-globe"></i> Bangladesh &bull; BDT
+                    </button>
+                </div>
+
+            </div>
+        </div>
+
+    </footer>
+    <!-- small-footer -->
+    <div class="bg-dark text-secondary py-4 mb-3 small">
+
+        <div class="container-fluid">
+            <hr class="py-0 mx-5">
+            <div class="row align-items-center gy-3">
+
+                <!-- Copyright -->
+                <div class="col text-start">
+                    <span>&copy; 2026 Friday. All rights reserved.</span>
+                </div>
+
+                <!-- Links -->
+                <div class="col text-center">
+                    <div class="d-flex justify-content-center  gap-4">
+                        <a href="#" class="text-secondary text-decoration-none">Privacy policy</a>
+                        <a href="#" class="text-secondary text-decoration-none">Terms & conditions</a>
+                        <a href="#" class="text-secondary text-decoration-none">Cookie settings</a>
+                        <a href="#" class="text-secondary text-decoration-none">Accessibility</a>
+                    </div>
+                </div>
+
+
+                <div class="col text-end">
+                    <span>Made for better finds <i class="fa-solid fa-heart text-primary"></i></span>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="fixed-bottom bg-dark text-white py-0 shadow-lg border-top border-secondary border-opacity-25"
+        style="z-index: 1050;">
+        <marquee behavior="scroll" direction="left" scrollamount="6" class="m-0 fw-medium small">
+            <span class="mx-4"><i class="fa-solid fa-truck-fast text-primary me-2"></i> Free shipping on all orders over
+                &#2547;2000!</span>
+            <span class="mx-4"><i class="fa-solid fa-bolt text-warning me-2"></i> Flash Sale: Up to 40% off on Tech &
+                Gadgets!</span>
+            <span class="mx-4"><i class="fa-solid fa-rotate-left text-success me-2"></i> Easy 7-day hassle-free
+                returns</span>
+                <span class="mx-4"><i class="fa-solid fa-truck-fast text-primary me-2"></i> Free shipping on all orders over
+                &#2547;2000!</span>
+            <span class="mx-4"><i class="fa-solid fa-bolt text-warning me-2"></i> Flash Sale: Up to 40% off on Tech &
+                Gadgets!</span>
+            <span class="mx-4"><i class="fa-solid fa-rotate-left text-success me-2"></i> Easy 7-day hassle-free
+                returns</span>
+                <span class="mx-4"><i class="fa-solid fa-truck-fast text-primary me-2"></i> Free shipping on all orders over
+                &#2547;2000!</span>
+            <span class="mx-4"><i class="fa-solid fa-bolt text-warning me-2"></i> Flash Sale: Up to 40% off on Tech &
+                Gadgets!</span>
+            <span class="mx-4"><i class="fa-solid fa-rotate-left text-success me-2"></i> Easy 7-day hassle-free
+                returns</span>
+        </marquee>
+    </div>
+    <!-- Bootstrap 5 JS Bundle CDN (Optional) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

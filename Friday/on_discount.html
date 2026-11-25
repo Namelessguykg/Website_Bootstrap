@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>On Discount | Friday</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+    integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="container-fluid bg-dark">
+    <div class="row mx-lg-5 px-lg-5">
+      <div class="col-4 d-flex justify-content-start"><a class="text-decoration-none text-light" href="index.html">Friday</a></div>
+      <div class="col-4 d-flex justify-content-center"><a class="text-decoration-none text-light" href="account_type_change.html">Become a Seller</a></div>
+      <div class="col-4 d-flex justify-content-end"><a class="text-decoration-none text-light" href="help.html">Help</a></div>
+    </div>
+  </div>
+
+  <div class="mx-lg-5 px-lg-5">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><img src="image/logo.png" height="50" width="150" alt="Friday home"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#siteNavigation"
+          aria-controls="siteNavigation" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="siteNavigation">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+            <li class="nav-item"><a class="nav-link" href="sellers.html">SELLERS</a></li>
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="on_discount.html">ON DISCOUNTS</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="seller_shop.html" id="categoryDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">CATEGORIES</a>
+              <ul class="dropdown-menu" aria-labelledby="categoryDropdown">
+                <li><a class="dropdown-item" href="best_sells.html#sports">SPORTS</a></li>
+                <li><a class="dropdown-item" href="best_sells.html#tech-gadgets">TECH &amp; GADGETS</a></li>
+                <li><a class="dropdown-item" href="best_sells.html#home-living">HOME &amp; LIVING</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="todays_deal.html">TODAY'S DEAL</a></li>
+            <li class="nav-item"><a class="nav-link" href="best_sells.html">BEST SELLS</a></li>
+          </ul>
+          <a href="cart.html" class="mx-2 text-black" aria-label="Shopping cart"><i class="fa-solid fa-cart-shopping fa-xl"></i></a>
+          <a href="wishlist.html" class="mx-2 text-black" aria-label="Wishlist"><i class="fa-solid fa-heart fa-xl"></i></a>
+          <a href="profile_customer.html" class="mx-2 text-black" aria-label="Customer profile"><i class="fa-solid fa-circle-user fa-xl"></i></a>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <main class="container py-4 py-md-5">
+    <section class="bg-dark text-white rounded-5 p-4 p-md-5 mb-5">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-7">
+          <span class="badge bg-warning text-dark rounded-pill px-3 py-2 mb-3"><i class="fa-solid fa-tag me-1"></i> FRIDAY SAVINGS</span>
+          <h1 class="display-5 fw-bold mb-3">On Discount</h1>
+          <p class="lead text-white-50 mb-4">Explore special prices and current offers from Friday's marketplace.</p>
+          <a href="#discounted-products" class="btn btn-light rounded-pill px-4">Browse offers <i class="fa-solid fa-arrow-down ms-1"></i></a>
+        </div>
+        <div class="col-lg-5 text-center">
+          <img src="image/shoe.jpg" alt="Featured discounted product" class="img-fluid rounded-4" style="max-height: 260px;">
+        </div>
+      </div>
+    </section>
+
+    <section id="discounted-products" class="mb-5" data-product-filter-page>
+      <div class="mb-4">
+        <small class="text-primary fw-bold text-uppercase">Offers to explore</small>
+        <h2 class="fw-bold text-dark mb-1">Shop current offers</h2>
+        <p class="text-secondary mb-0">Offer availability and prices are shown by each seller.</p>
+      </div>
+      <div class="row g-4 align-items-start">
+        <aside class="col-lg-3">
+          <div class="card border rounded-4 p-3 shadow-sm product-filter-sidebar sticky-lg-top">
+            <div class="d-flex justify-content-between align-items-center">
+              <h3 class="h5 fw-bold mb-0"><i class="fa-solid fa-sliders me-2"></i>Filters</h3>
+              <button class="btn btn-outline-secondary btn-sm d-lg-none" type="button" data-bs-toggle="collapse"
+                data-bs-target="#discountFilters" aria-expanded="false" aria-controls="discountFilters">Show filters</button>
+            </div>
+            <form id="product-filter-form" aria-label="Filter discounted products">
+              <div id="discountFilters" class="collapse d-lg-block mt-3">
+                <div class="mb-3">
+                  <label class="form-label fw-semibold" for="discountSearch">Search</label>
+                  <input class="form-control" type="search" id="discountSearch" name="search" placeholder="Product name">
+                </div>
+                <div class="mb-3">
+                  <label class="form-label fw-semibold" for="discountSort">Sort by price</label>
+                  <select class="form-select" id="discountSort" name="sort">
+                    <option value="default">Featured</option>
+                    <option value="price-ascending">Price: low to high</option>
+                    <option value="price-descending">Price: high to low</option>
+                  </select>
+                </div>
+                <div class="mb-3">
+                  <label class="form-label fw-semibold" for="discountCategory">Category</label>
+                  <select class="form-select" id="discountCategory" name="category">
+                    <option value="">All categories</option>
+                    <option value="sports">Sports</option>
+                    <option value="tech & gadgets">Tech &amp; Gadgets</option>
+                    <option value="home & living">Home &amp; Living</option>
+                  </select>
+                </div>
+                <div class="mb-3">
+                  <label class="form-label fw-semibold" for="discountType">Product type</label>
+                  <select class="form-select" id="discountType" name="type">
+                    <option value="">All types</option>
+                    <option value="wearable">Wearable</option>
+                    <option value="audio">Audio</option>
+                    <option value="lighting">Lighting</option>
+                    <option value="footwear">Footwear</option>
+                  </select>
+                </div>
+                <div class="mb-3">
+                  <label class="form-label fw-semibold" for="discountColor">Color</label>
+                  <select class="form-select" id="discountColor" name="color">
+                    <option value="">All colors</option>
+                    <option value="brown">Brown</option>
+                    <option value="green">Green</option>
+                    <option value="teal">Teal</option>
+                    <option value="black">Black</option>
+                    <option value="blue">Blue</option>
+                    <option value="white">White</option>
+                  </select>
+                </div>
+                <fieldset class="mb-3">
+                  <legend class="form-label fw-semibold">Price range (&#2547;)</legend>
+                  <div class="d-flex gap-2">
+                    <label class="visually-hidden" for="discountMinPrice">Minimum price</label>
+                    <input class="form-control" type="number" id="discountMinPrice" name="minPrice" min="0" placeholder="Min">
+                    <label class="visually-hidden" for="discountMaxPrice">Maximum price</label>
+                    <input class="form-control" type="number" id="discountMaxPrice" name="maxPrice" min="0" placeholder="Max">
+                  </div>
+                  <div class="form-text">Products without a listed price are excluded when a price range is set.</div>
+                </fieldset>
+                <button class="btn btn-outline-dark rounded-pill w-100" type="reset">Clear filters</button>
+              </div>
+            </form>
+          </div>
+        </aside>
+        <div class="col-lg-9">
+          <p class="small text-secondary mb-3" data-product-count aria-live="polite"></p>
+          <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4" data-product-grid>
+        <div class="col" data-filter-product data-name="sports watch" data-category="sports" data-type="wearable" data-colors="brown,green" data-price="1550">
+          <article class="card border rounded-4 p-3 shadow-sm h-100">
+            <a href="product_view.html?product=sports-watch" class="text-decoration-none">
+              <div class="position-relative bg-light rounded-4 overflow-hidden mb-3" style="height: 220px;">
+                <span class="position-absolute top-0 start-0 m-2 badge bg-danger">SAVE &#2547;700</span>
+                <img src="image/watch.jpg" alt="Sports watch" class="w-100 h-100 object-fit-cover">
+              </div>
+              <small class="text-primary fw-bold text-uppercase">Sports</small>
+              <h3 class="h5 fw-bold text-dark mt-1 mb-2">Sports Watch</h3>
+            </a>
+            <div class="mt-auto">
+              <p class="mb-3"><span class="fw-bold fs-5 text-dark">&#2547;1,550</span> <del class="text-secondary ms-2">&#2547;2,250</del></p>
+              <a href="product_view.html?product=sports-watch" class="btn btn-dark rounded-pill w-100">View offer</a>
+            </div>
+          </article>
+        </div>
+        <div class="col" data-filter-product data-name="wireless headphones" data-category="tech & gadgets" data-type="audio" data-colors="teal,black" data-price="4050">
+          <article class="card border rounded-4 p-3 shadow-sm h-100">
+            <a href="product_view.html?product=wireless-headphones" class="text-decoration-none">
+              <div class="position-relative bg-light rounded-4 overflow-hidden mb-3" style="height: 220px;">
+                <span class="position-absolute top-0 start-0 m-2 badge bg-primary">SPECIAL OFFER</span>
+                <img src="image/headphones.jpg" alt="Wireless headphones" class="w-100 h-100 object-fit-cover">
+              </div>
+              <small class="text-primary fw-bold text-uppercase">Tech &amp; Gadgets</small>
+              <h3 class="h5 fw-bold text-dark mt-1 mb-2">Wireless Headphones</h3>
+            </a>
+            <div class="mt-auto">
+              <p class="fw-bold fs-5 text-dark mb-3">&#2547;4,050</p>
+              <a href="product_view.html?product=wireless-headphones" class="btn btn-dark rounded-pill w-100">View offer</a>
+            </div>
+          </article>
+        </div>
+        <div class="col" data-filter-product data-name="flower table lamp" data-category="home & living" data-type="lighting" data-colors="green,white" data-price="2050">
+          <article class="card border rounded-4 p-3 shadow-sm h-100">
+            <a href="product_view.html?product=flower-table-lamp" class="text-decoration-none">
+              <div class="position-relative bg-light rounded-4 overflow-hidden mb-3" style="height: 220px;">
+                <span class="position-absolute top-0 start-0 m-2 badge bg-primary">SPECIAL OFFER</span>
+                <img src="image/lamp.jpg" alt="Flower table lamp" class="w-100 h-100 object-fit-cover">
+              </div>
+              <small class="text-primary fw-bold text-uppercase">Home &amp; Living</small>
+              <h3 class="h5 fw-bold text-dark mt-1 mb-2">Flower Table Lamp</h3>
+            </a>
+            <div class="mt-auto">
+              <p class="fw-bold fs-5 text-dark mb-3">&#2547;2,050</p>
+              <a href="product_view.html?product=flower-table-lamp" class="btn btn-dark rounded-pill w-100">View offer</a>
+            </div>
+          </article>
+        </div>
+        <div class="col" data-filter-product data-name="everyday sneakers" data-category="sports" data-type="footwear" data-colors="blue,white" data-price="">
+          <article class="card border rounded-4 p-3 shadow-sm h-100">
+            <a href="product_view.html?product=everyday-sneakers" class="text-decoration-none">
+              <div class="position-relative bg-light rounded-4 overflow-hidden mb-3" style="height: 220px;">
+                <span class="position-absolute top-0 start-0 m-2 badge bg-primary">SPECIAL OFFER</span>
+                <img src="image/shoe.jpg" alt="Everyday sneakers" class="w-100 h-100 object-fit-cover">
+              </div>
+              <small class="text-primary fw-bold text-uppercase">Sports</small>
+              <h3 class="h5 fw-bold text-dark mt-1 mb-2">Everyday Sneakers</h3>
+            </a>
+            <div class="mt-auto">
+              <p class="text-secondary mb-3">Check seller for current price</p>
+              <a href="product_view.html?product=everyday-sneakers" class="btn btn-dark rounded-pill w-100">View offer</a>
+            </div>
+          </article>
+        </div>
+          </div>
+          <div class="alert alert-light border text-center d-none mt-4" data-empty-state role="status">
+            <h3 class="h5 fw-bold">No products match those filters</h3>
+            <p class="text-secondary mb-0">Try changing your search or clearing some filters.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="card border-0 rounded-4 bg-primary-subtle p-4 p-md-5 text-center">
+      <h2 class="h3 fw-bold text-dark">Looking for today's pick?</h2>
+      <p class="text-secondary mb-4">See today's featured deals from Friday sellers.</p>
+      <div class="d-flex flex-wrap justify-content-center gap-2">
+        <a href="todays_deal.html" class="btn btn-primary rounded-pill px-4">Today's Deal</a>
+        <a href="best_sells.html" class="btn btn-outline-dark rounded-pill px-4">Best Sells</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-dark text-white py-5 px-4 mt-5">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <a href="index.html"><img src="image/footer-logo.png" height="50" width="150" alt="Friday home"></a>
+          <p class="text-secondary small mt-3">Good things for everyday living. Find your next favourite thing with Friday.</p>
+        </div>
+        <div class="col-6 col-lg-2">
+          <h2 class="h6 fw-bold">Shop</h2>
+          <ul class="list-unstyled small d-grid gap-2">
+            <li><a href="index.html#products" class="text-secondary text-decoration-none">All products</a></li>
+            <li><a href="best_sells.html" class="text-secondary text-decoration-none">Best sells</a></li>
+            <li><a href="on_discount.html" class="text-secondary text-decoration-none">On discount</a></li>
+            <li><a href="todays_deal.html" class="text-secondary text-decoration-none">Today's deal</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-3">
+          <h2 class="h6 fw-bold">Customer care</h2>
+          <ul class="list-unstyled small d-grid gap-2">
+            <li><a href="help.html" class="text-secondary text-decoration-none">Help center</a></li>
+            <li><a href="live_chat.html" class="text-secondary text-decoration-none">Message a seller</a></li>
+            <li><a href="profile_customer.html" class="text-secondary text-decoration-none">My account</a></li>
+            <li><a href="cart.html" class="text-secondary text-decoration-none">Shopping cart</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3"><a href="account_type_change.html" class="btn btn-outline-light rounded-pill">Become a seller</a></div>
+      </div>
+      <hr class="border-secondary my-4">
+      <p class="small text-secondary mb-0">&copy; 2026 Friday. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/product-filters.js"></script>
+</body>
+
+</html>

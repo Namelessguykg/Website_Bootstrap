@@ -1,0 +1,75 @@
+.product-hover {
+    transition: all 0.3s ease;
+}
+
+.product-hover:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15) !important;
+    border-color: var(--bs-primary) !important;
+}
+
+/* Image zoom effect */
+.product-hover img {
+    transition: transform 0.5s ease;
+}
+
+.product-hover:hover img {
+    transform: scale(1.1);
+}
+
+.product-filter-sidebar {
+    top: 1rem;
+}
+.hover-shadow {
+    transition: all 0.3s ease;
+}
+
+.hover-shadow:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15) !important;
+    border-color: var(--bs-primary) !important;
+}
+/* Smooth carousel transition */
+#editorCarousel .carousel-item {
+    transition: opacity 1s ease-in-out;
+}
+
+/* Image zoom animation */
+#editorCarousel .carousel-item img {
+    height: 350px;
+    object-fit: cover;
+    transition: transform 4s ease;
+}
+
+#editorCarousel .carousel-item.active img {
+    transform: scale(1.08);
+}
+
+/* Text animation */
+#editorCarousel .carousel-caption-box {
+    opacity: 0;
+    transform: translateY(25px);
+    transition: all 0.8s ease 0.4s;
+}
+
+#editorCarousel .carousel-item.active .carousel-caption-box {
+    opacity: 1;
+    transform: translateY(0);
+}
+.product-hover {
+    transition: all 0.3s ease;
+}
+
+.product-hover:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15) !important;
+    border-color: var(--bs-primary) !important;
+}
+
+.product-hover img {
+    transition: transform 0.5s ease;
+}
+
+.product-hover:hover img {
+    transform: scale(1.1);
+}

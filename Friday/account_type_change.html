@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Announcement Bar</title>
+    <!-- Bootstrap 5 CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+        integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<div class="container py-5">
+  <div class="d-flex justify-content-between align-items-center mb-4">
+    <a href="index.html" class="text-decoration-none text-dark fw-medium"><i class="fa-solid fa-arrow-left me-1"></i> Back to shopping</a>
+    <div class="d-flex gap-3">
+      <a href="profile_customer.html" class="text-decoration-none">My account</a>
+      <a href="help.html" class="text-decoration-none">Help</a>
+    </div>
+  </div>
+  
+  <!-- Hero Section -->
+  <div class="text-center max-w-700 mx-auto mb-5">
+    <span class="badge bg-primary-subtle text-primary border border-primary px-3 py-2 rounded-pill fw-bold mb-3">
+      <i class="fa-solid fa-rocket me-1"></i> Grow Your Business
+    </span>
+    <h1 class="fw-bold display-5 text-dark mb-3">Become a Seller on Friday</h1>
+    <p class="text-secondary lead fs-6">
+      Complete the steps below to set up your store, configure payouts, and verify your account.
+    </p>
+  </div>
+
+  <div class="row justify-content-center">
+    <div class="col-lg-8">
+      
+      <!-- Stepper Header Navigation -->
+      <div class="card border-0 shadow-sm rounded-4 mb-4">
+        <div class="card-body p-4">
+          <div class="row text-center g-2 position-relative">
+            
+            <!-- Step 1 Indicator -->
+            <div class="col-4">
+              <div id="step1-badge" class="bg-primary text-white rounded-circle d-inline-flex align-items-center justify-content-center fw-bold mb-2" style="width: 36px; height: 36px;">1</div>
+              <small id="step1-label" class="d-block fw-bold text-primary">Store Profile</small>
+            </div>
+
+            <!-- Step 2 Indicator -->
+            <div class="col-4">
+              <div id="step2-badge" class="bg-light text-secondary border rounded-circle d-inline-flex align-items-center justify-content-center fw-bold mb-2" style="width: 36px; height: 36px;">2</div>
+              <small id="step2-label" class="d-block text-secondary">Payout Details</small>
+            </div>
+
+            <!-- Step 3 Indicator -->
+            <div class="col-4">
+              <div id="step3-badge" class="bg-light text-secondary border rounded-circle d-inline-flex align-items-center justify-content-center fw-bold mb-2" style="width: 36px; height: 36px;">3</div>
+              <small id="step3-label" class="d-block text-secondary">Verification</small>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Main Form Container Card -->
+      <div class="card border rounded-4 p-4 p-md-5 shadow-sm bg-white">
+        
+        <form id="sellerConversionForm" onsubmit="return false;">
+          
+          <!-- ================= STEP 1: STORE PROFILE ================= -->
+          <div id="step1-content">
+            <!-- Current Account Banner -->
+            <div class="d-flex align-items-center justify-content-between p-3 rounded-3 bg-light border mb-4">
+              <div class="d-flex align-items-center gap-3">
+                <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center fw-bold" style="width: 45px; height: 45px;">
+                  KI
+                </div>
+                <div>
+                  <span class="small text-muted d-block">Logged in as</span>
+                  <strong class="text-dark">khandakerimran1731</strong>
+                </div>
+              </div>
+              <span class="badge bg-secondary rounded-pill">Customer</span>
+            </div>
+
+            <h5 class="fw-bold text-dark mb-4"><i class="fa-solid fa-store text-primary me-2"></i> Step 1: Store Setup</h5>
+
+            <div class="row g-3 mb-4">
+              <!-- Shop Name -->
+              <div class="col-md-6">
+                <label class="form-label small text-secondary fw-medium">Shop / Display Name</label>
+                <div class="input-group">
+                  <span class="input-group-text bg-light border-end-0"><i class="fa-solid fa-shop text-muted"></i></span>
+                  <input type="text" class="form-control rounded-end-3 ps-2" placeholder="e.g. Imran Tech World" required>
+                </div>
+              </div>
+
+              <!-- Business Category -->
+              <div class="col-md-6">
+                <label class="form-label small text-secondary fw-medium">Primary Category</label>
+                <select class="form-select rounded-3" required>
+                  <option value="" selected disabled>Select primary category</option>
+                  <option>Tech & Gadgets</option>
+                  <option>Fashion & Apparel</option>
+                  <option>Home & Living</option>
+                  <option>Sports & Outdoor</option>
+                </select>
+              </div>
+
+              <!-- Phone Number -->
+              <div class="col-md-6">
+                <label class="form-label small text-secondary fw-medium">Business Phone Number</label>
+                <div class="input-group">
+                  <span class="input-group-text bg-light border-end-0"><i class="fa-solid fa-phone text-muted"></i></span>
+                  <input type="tel" class="form-control rounded-end-3 ps-2" value="+880 1700-000000" required>
+                </div>
+              </div>
+
+              <!-- Trade License / NID -->
+              <div class="col-md-6">
+                <label class="form-label small text-secondary fw-medium">NID / Trade License No.</label>
+                <div class="input-group">
+                  <span class="input-group-text bg-light border-end-0"><i class="fa-solid fa-id-card text-muted"></i></span>
+                  <input type="text" class="form-control rounded-end-3 ps-2" placeholder="Enter NID or License number" required>
+                </div>
+              </div>
+
+              <!-- Warehouse Address -->
+              <div class="col-12">
+                <label class="form-label small text-secondary fw-medium">Warehouse / Pickup Address</label>
+                <textarea class="form-control rounded-3" rows="2" placeholder="House/Road, Area, City" required></textarea>
+              </div>
+            </div>
+
+            <!-- Terms Checkbox -->
+            <div class="form-check mb-4">
+              <input class="form-check-input" type="checkbox" id="sellerTerms" required>
+              <label class="form-check-label small text-secondary" for="sellerTerms">
+                I agree to the <a href="#" class="text-primary text-decoration-none">Merchant Service Agreement</a> and understand the seller commission rates.
+              </label>
+            </div>
+
+            <!-- Action Buttons for Step 1 -->
+            <div class="d-flex justify-content-between align-items-center pt-3 border-top">
+              <a href="profile_customer.html" class="btn btn-outline-secondary rounded-pill px-4">Cancel</a>
+              <button type="button" onclick="goToStep(2)" class="btn btn-primary rounded-pill px-5 fw-medium">
+                Continue to Payouts <i class="fa-solid fa-arrow-right ms-1"></i>
+              </button>
+            </div>
+          </div>
+
+
+          <!-- ================= STEP 2: PAYOUT DETAILS ================= -->
+          <div id="step2-content" class="d-none">
+            <h5 class="fw-bold text-dark mb-4"><i class="fa-solid fa-money-bill-transfer text-primary me-2"></i> Step 2: Payout Method</h5>
+
+            <!-- Method Type Selector -->
+            <div class="row g-3 mb-4">
+              <div class="col-md-6">
+                <input type="radio" class="btn-check" name="payoutType" id="payoutBank" checked>
+                <label class="btn btn-outline-primary w-100 p-3 rounded-4 text-start h-100" for="payoutBank">
+                  <div class="d-flex align-items-center justify-content-between mb-2">
+                    <i class="fa-solid fa-building-columns fs-3"></i>
+                    <i class="fa-solid fa-circle-check fs-5"></i>
+                  </div>
+                  <strong class="d-block text-dark">Bank Transfer</strong>
+                  <small class="text-secondary">Direct transfer to any Bangladeshi bank account</small>
+                </label>
+              </div>
+              <div class="col-md-6">
+                <input type="radio" class="btn-check" name="payoutType" id="payoutMFS">
+                <label class="btn btn-outline-primary w-100 p-3 rounded-4 text-start h-100" for="payoutMFS">
+                  <div class="d-flex align-items-center justify-content-between mb-2">
+                    <i class="fa-solid fa-mobile-screen-button fs-3"></i>
+                    <i class="fa-solid fa-circle-check fs-5"></i>
+                  </div>
+                  <strong class="d-block text-dark">Mobile Banking</strong>
+                  <small class="text-secondary">bKash, Nagad, or Rocket Merchant Account</small>
+                </label>
+              </div>
+            </div>
+
+            <!-- Bank Account Details -->
+            <div class="row g-3 mb-4">
+              <div class="col-md-6">
+                <label class="form-label small text-secondary fw-medium">Bank Name</label>
+                <select class="form-select rounded-3">
+                  <option value="" selected disabled>Select Bank</option>
+                  <option>Dutch-Bangla Bank Ltd. (DBBL)</option>
+                  <option>BRAC Bank PLC</option>
+                  <option>City Bank PLC</option>
+                  <option>Islami Bank Bangladesh Ltd.</option>
+                  <option>Eastern Bank PLC (EBL)</option>
+                </select>
+              </div>
+
+              <div class="col-md-6">
+                <label class="form-label small text-secondary fw-medium">Branch Name</label>
+                <input type="text" class="form-control rounded-3" placeholder="e.g. Kawran Bazar Branch">
+              </div>
+
+              <div class="col-md-6">
+                <label class="form-label small text-secondary fw-medium">Account Title / Name</label>
+                <input type="text" class="form-control rounded-3" placeholder="Exact name on bank account">
+              </div>
+
+              <div class="col-md-6">
+                <label class="form-label small text-secondary fw-medium">Account Number</label>
+                <input type="text" class="form-control rounded-3" placeholder="Enter bank account number">
+              </div>
+            </div>
+
+            <!-- Action Buttons for Step 2 -->
+            <div class="d-flex justify-content-between align-items-center pt-3 border-top">
+              <button type="button" onclick="goToStep(1)" class="btn btn-outline-secondary rounded-pill px-4">
+                <i class="fa-solid fa-arrow-left me-1"></i> Back
+              </button>
+              <button type="button" onclick="goToStep(3)" class="btn btn-primary rounded-pill px-5 fw-medium">
+                Continue to Verification <i class="fa-solid fa-arrow-right ms-1"></i>
+              </button>
+            </div>
+          </div>
+
+
+          <!-- ================= STEP 3: DOCUMENT VERIFICATION ================= -->
+          <div id="step3-content" class="d-none">
+            <h5 class="fw-bold text-dark mb-4"><i class="fa-solid fa-file-contract text-primary me-2"></i> Step 3: Identity Verification</h5>
+
+            <div class="row g-4 mb-4">
+              
+              <!-- Document Type Selection -->
+              <div class="col-12">
+                <label class="form-label small text-secondary fw-medium">Verification Document Type</label>
+                <select class="form-select rounded-3">
+                  <option selected>National ID (NID)</option>
+                  <option>Smart Card ID</option>
+                  <option>Passport</option>
+                  <option>Trade License (For Registered Companies)</option>
+                </select>
+              </div>
+
+              <!-- Upload Front Side -->
+              <div class="col-md-6">
+                <label class="form-label small text-secondary fw-medium">Document Front Side</label>
+                <div class="border border-2 border-dashed rounded-4 p-4 text-center bg-light position-relative">
+                  <i class="fa-solid fa-cloud-arrow-up fs-2 text-primary mb-2"></i>
+                  <small class="d-block fw-bold text-dark mb-1">Click to upload or drag & drop</small>
+                  <span class="text-muted small d-block mb-2">PNG, JPG or PDF (Max 5MB)</span>
+                  <input type="file" class="position-absolute top-0 start-0 w-100 h-100 opacity-0 cursor-pointer">
+                </div>
+              </div>
+
+              <!-- Upload Back Side -->
+              <div class="col-md-6">
+                <label class="form-label small text-secondary fw-medium">Document Back Side</label>
+                <div class="border border-2 border-dashed rounded-4 p-4 text-center bg-light position-relative">
+                  <i class="fa-solid fa-cloud-arrow-up fs-2 text-primary mb-2"></i>
+                  <small class="d-block fw-bold text-dark mb-1">Click to upload or drag & drop</small>
+                  <span class="text-muted small d-block mb-2">PNG, JPG or PDF (Max 5MB)</span>
+                  <input type="file" class="position-absolute top-0 start-0 w-100 h-100 opacity-0 cursor-pointer">
+                </div>
+              </div>
+
+              <!-- Verification Notice -->
+              <div class="col-12">
+                <div class="alert alert-info border-0 rounded-3 mb-0 small text-secondary d-flex align-items-center gap-2">
+                  <i class="fa-solid fa-circle-info text-primary fs-5"></i>
+                  <span>Your identity documents are encrypted and reviewed strictly for merchant authentication under Friday's privacy policy. Verification usually takes 24–48 hours.</span>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Action Buttons for Step 3 -->
+            <div class="d-flex justify-content-between align-items-center pt-3 border-top">
+              <button type="button" onclick="goToStep(2)" class="btn btn-outline-secondary rounded-pill px-4">
+                <i class="fa-solid fa-arrow-left me-1"></i> Back
+              </button>
+              <button type="submit" onclick="alert('Seller application submitted successfully!')" class="btn btn-success rounded-pill px-5 fw-medium">
+                Submit & Activate Shop <i class="fa-solid fa-circle-check ms-1"></i>
+              </button>
+            </div>
+          </div>
+
+        </form>
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- JavaScript Multi-Step Navigation Handler -->
+<script>
+  function goToStep(stepNumber) {
+    // Hide all step content panels
+    document.getElementById('step1-content').classList.add('d-none');
+    document.getElementById('step2-content').classList.add('d-none');
+    document.getElementById('step3-content').classList.add('d-none');
+
+    // Reset step indicator badges
+    const badges = [
+      document.getElementById('step1-badge'),
+      document.getElementById('step2-badge'),
+      document.getElementById('step3-badge')
+    ];
+    const labels = [
+      document.getElementById('step1-label'),
+      document.getElementById('step2-label'),
+      document.getElementById('step3-label')
+    ];
+
+    badges.forEach((badge, idx) => {
+      const step = idx + 1;
+      if (step < stepNumber) {
+        // Completed step state
+        badge.className = 'bg-success text-white rounded-circle d-inline-flex align-items-center justify-content-center fw-bold mb-2';
+        badge.innerHTML = '<i class="fa-solid fa-check"></i>';
+        labels[idx].className = 'd-block fw-bold text-success';
+      } else if (step === stepNumber) {
+        // Active step state
+        badge.className = 'bg-primary text-white rounded-circle d-inline-flex align-items-center justify-content-center fw-bold mb-2';
+        badge.innerHTML = step;
+        labels[idx].className = 'd-block fw-bold text-primary';
+      } else {
+        // Inactive future step state
+        badge.className = 'bg-light text-secondary border rounded-circle d-inline-flex align-items-center justify-content-center fw-bold mb-2';
+        badge.innerHTML = step;
+        labels[idx].className = 'd-block text-secondary';
+      }
+    });
+
+    // Show selected step panel
+    document.getElementById(`step${stepNumber}-content`).classList.remove('d-none');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+</script>
+    <!-- Bootstrap 5 JS Bundle CDN (Optional) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

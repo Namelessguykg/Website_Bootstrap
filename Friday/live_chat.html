@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Announcement Bar</title>
+    <!-- Bootstrap 5 CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+        integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Announcement Bar -->
+    <div class="container-fluid bg-dark">
+        <div class="row mx-lg-5 px-lg-5">
+            <div class="col-4 d-flex justify-content-start">
+                <div><a class=" text-decoration-none text-light" href="index.html">Friday</a></div>
+
+            </div>
+            <div class="col-4 d-flex justify-content-center">
+                <div><a class="text-decoration-none text-light mx-auto" href="account_type_change.html">Become a Seller</a></div>
+
+            </div>
+            <div class="col-4 d-flex justify-content-end">
+                <div><a class="text-decoration-none text-light" href="help.html">Help</a></div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- Nav bar -->
+    <div class="mx-lg-5 px-lg-5">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"><img src="image/logo.png" height="50px" width="150px"
+                        alt="Header-logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav  me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="sellers.html">SELLERS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="on_discount.html">ON DISCOUNTS</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="seller_shop.html" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                CATAGORIES
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="seller_shop.html">SPORTS</a></li>
+                                <li><a class="dropdown-item" href="seller_shop.html">TECH & GADGETS</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="seller_shop.html">+ ADD MORE</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="todays_deal.html">TODAY'S DEAL</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="best_sells.html">BEST SELLS</a>
+                        </li>
+
+                    </ul>
+                    <div class="collapse collapse-horizontal" id="search">
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2 mb-2" type="search" placeholder="Search"
+                                aria-label="Search" />
+                        </form>
+                    </div>
+                    <a href="#search" class="mx-1 text-black" data-bs-toggle="collapse" role="button"
+                        aria-expanded="false"><i class="fa-solid fa-magnifying-glass fa-xl"></i></a>
+                    <a href="cart.html" class="mx-1 text-black"><i class="fa-solid fa-cart-shopping fa-xl"></i></a>
+                    <a href="wishlist.html" class="mx-1 text-black" aria-label="Wishlist"><i class="fa-solid fa-heart fa-xl"></i></a>
+                    <a href="profile_customer.html" class="mx-1 text-black"><i class="fa-solid fa-circle-user fa-xl"></i></a>
+                </div>
+            </div>
+    </div>
+    </nav>
+    </div>
+
+
+
+
+<div class="container py-4">
+  
+  <!-- Page Header -->
+  <div class="mb-4">
+    <small class="text-primary fw-bold text-uppercase d-block mb-1" style="font-size: 11px;">Customer Care</small>
+    <h2 class="fw-bold text-dark mb-0">Live Support Center</h2>
+  </div>
+
+  <div class="row g-4" style="min-height: 600px;">
+    
+    <!-- LEFT SIDEBAR: CONVERSATION LIST -->
+    <div class="col-lg-4">
+      <div class="card border rounded-4 shadow-sm h-100 p-3 bg-white">
+        
+        <!-- Search Chats -->
+        <div class="input-group mb-3">
+          <input type="text" class="form-control form-control-sm rounded-start-pill ps-3 bg-light border" placeholder="Search conversations...">
+          <button class="btn btn-outline-secondary btn-sm rounded-end-pill px-3" type="button"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+
+        <!-- Chat List Items -->
+        <div class="vstack gap-2 overflow-auto pe-1" style="max-height: 500px;">
+          
+          <!-- Active / Selected Chat -->
+          <div class="p-3 rounded-4 bg-primary text-white position-relative cursor-pointer shadow-sm">
+            <div class="d-flex justify-content-between align-items-center mb-1">
+              <span class="fw-bold small">Order #FRD-8912 Inquiry</span>
+              <small class="text-white-50" style="font-size: 0.7rem;">10:45 AM</small>
+            </div>
+            <p class="small text-white-50 mb-0 text-truncate">Agent Rahat: We have dispatched your parcel...</p>
+            <span class="position-absolute top-50 end-0 translate-middle-y me-3 badge bg-white text-primary rounded-pill">Active</span>
+          </div>
+
+          <!-- Inactive Chat 2 -->
+          <div class="p-3 rounded-4 bg-light border position-relative cursor-pointer">
+            <div class="d-flex justify-content-between align-items-center mb-1">
+              <span class="fw-bold text-dark small">Wallet Top-up Issue</span>
+              <small class="text-muted" style="font-size: 0.7rem;">Yesterday</small>
+            </div>
+            <p class="small text-secondary mb-0 text-truncate">You: Thank you for resolving it quickly.</p>
+          </div>
+
+          <!-- Inactive Chat 3 -->
+          <div class="p-3 rounded-4 bg-light border position-relative cursor-pointer">
+            <div class="d-flex justify-content-between align-items-center mb-1">
+              <span class="fw-bold text-dark small">Seller Onboarding Question</span>
+              <small class="text-muted" style="font-size: 0.7rem;">Oct 15</small>
+            </div>
+            <p class="small text-secondary mb-0 text-truncate">Agent Tanvir: Please upload your NID back side.</p>
+          </div>
+
+        </div>
+
+        <!-- New Chat Button -->
+        <div class="mt-3 pt-3 border-top">
+          <button class="btn btn-outline-primary w-100 rounded-pill btn-sm fw-medium">
+            <i class="fa-solid fa-plus me-1"></i> Start New Support Chat
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- RIGHT MAIN CHAT WINDOW -->
+    <div class="col-lg-8">
+      <div class="card border rounded-4 shadow-sm h-100 d-flex flex-column bg-white overflow-hidden">
+        
+        <!-- Chat Header -->
+        <div class="card-header bg-light border-bottom p-3 d-flex align-items-center justify-content-between">
+          <div class="d-flex align-items-center gap-3">
+            <div class="position-relative">
+              <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center fw-bold" style="width: 45px; height: 45px;">
+                R
+              </div>
+              <span class="position-absolute bottom-0 end-0 p-1 bg-success border border-white rounded-circle" style="width: 12px; height: 12px;"></span>
+            </div>
+            <div>
+              <h6 class="fw-bold text-dark mb-0">Agent Rahat <span class="badge bg-primary-subtle text-primary border border-primary fw-normal ms-2 small" style="font-size: 10px;">Support Specialist</span></h6>
+              <small class="text-success fw-medium" style="font-size: 11px;"><i class="fa-solid fa-circle me-1" style="font-size: 8px;"></i> Online &bull; Usually replies in 2 mins</small>
+            </div>
+          </div>
+          <div>
+            <button class="btn btn-light border btn-sm rounded-circle p-2 text-secondary" title="Call Support"><i class="fa-solid fa-phone"></i></button>
+            <button class="btn btn-light border btn-sm rounded-circle p-2 text-secondary ms-1" title="Close Chat"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+          </div>
+        </div>
+
+        <!-- Chat Messages Body -->
+        <div class="card-body p-4 overflow-auto vstack gap-3 flex-grow-1 bg-light bg-opacity-50" style="max-height: 420px;">
+          
+          <!-- Timestamp Divider -->
+          <div class="text-center">
+            <span class="badge bg-light text-muted border px-3 py-1 rounded-pill small">Today, 10:30 AM</span>
+          </div>
+
+          <!-- Customer Message -->
+          <div class="d-flex align-items-end gap-2 justify-content-end">
+            <div class="bg-primary text-white p-3 rounded-4 rounded-end-0 small shadow-sm" style="max-width: 75%;">
+              <p class="mb-1">Hello! I wanted to check the delivery status of my order #FRD-8912 (Sports Watch).</p>
+              <div class="text-end text-white-50" style="font-size: 10px;">10:30 AM</div>
+            </div>
+          </div>
+
+          <!-- Agent Message -->
+          <div class="d-flex align-items-end gap-2">
+            <div class="bg-white text-dark border p-3 rounded-4 rounded-start-0 small shadow-sm" style="max-width: 75%;">
+              <p class="mb-1">Hello Khandaker Imran! Let me check that for you right away.</p>
+              <div class="text-muted" style="font-size: 10px;">10:32 AM</div>
+            </div>
+          </div>
+
+          <!-- Agent Message 2 -->
+          <div class="d-flex align-items-end gap-2">
+            <div class="bg-white text-dark border p-3 rounded-4 rounded-start-0 small shadow-sm" style="max-width: 75%;">
+              <p class="mb-1">We have dispatched your parcel with our logistics partner. It is scheduled to arrive by this afternoon!</p>
+              <div class="text-muted" style="font-size: 10px;">10:45 AM</div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Chat Input Footer -->
+        <div class="card-footer bg-white border-top p-3">
+          <form class="input-group">
+            <button class="btn btn-light border border-end-0 text-secondary rounded-start-pill px-3" type="button" title="Attach File"><i class="fa-solid fa-paperclip"></i></button>
+            <input type="text" class="form-control border-start-0 border-end-0 bg-transparent shadow-none small" placeholder="Type your message here...">
+            <button class="btn btn-light border border-start-0 text-secondary px-3" type="button" title="Insert Emoji"><i class="fa-regular fa-face-smile"></i></button>
+            <button class="btn btn-primary rounded-end-pill px-4 fw-medium" type="submit">
+              Send <i class="fa-solid fa-paper-plane ms-1"></i>
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+
+
+
+
+        <footer class="bg-dark text-white py-5 px-4">
+        <div class="container-fluid">
+            <div class="row g-4">
+
+                <!-- Column 1: Brand, Socials & Payments -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="d-flex align-items-center gap-2 mb-3">
+                        <a href="index.html"><img src="image/footer-logo.png" height="50px" width="150px" alt="Header-logo"></a>
+                    </div>
+                    <p class="text-secondary small mb-4">Good things for everyday living. Find your next favourite thing
+                        with Friday.</p>
+
+                    <div class="d-flex gap-2 mb-4">
+                        <a href="#"
+                            class="btn btn-outline-secondary rounded-3 d-flex align-items-center justify-content-center p-0"
+                            style="width: 38px; height: 38px;"><i class="fa-brands fa-instagram text-white"></i></a>
+                        <a href="#"
+                            class="btn btn-outline-secondary rounded-3 d-flex align-items-center justify-content-center p-0"
+                            style="width: 38px; height: 38px;"><i class="fa-brands fa-facebook-f text-white"></i></a>
+                        <a href="#"
+                            class="btn btn-outline-secondary rounded-3 d-flex align-items-center justify-content-center p-0"
+                            style="width: 38px; height: 38px;"><i class="fa-brands fa-tiktok text-white"></i></a>
+                        <a href="#"
+                            class="btn btn-outline-secondary rounded-3 d-flex align-items-center justify-content-center p-0"
+                            style="width: 38px; height: 38px;"><i class="fa-brands fa-pinterest-p text-white"></i></a>
+                    </div>
+
+                    <small class="text-secondary d-block mb-2">Secure payments</small>
+                    <div class="d-flex flex-wrap gap-2">
+                        <span class="badge bg-white text-dark px-2 py-1 fw-bold">VISA</span>
+                        <span class="badge bg-white text-dark px-2 py-1 fw-bold">mastercard</span>
+                        <span class="badge bg-white text-dark px-2 py-1 fw-bold">bKash</span>
+                        <span class="badge bg-white text-dark px-2 py-1 fw-bold">Nagad</span>
+                    </div>
+                </div>
+
+                <!-- Column 2: Shop -->
+                <div class="col-lg-2 col-md-3 col-6">
+                    <h6 class="fw-bold text-white mb-3">Shop</h6>
+                    <ul class="list-unstyled d-flex flex-column gap-2 small">
+                        <li><a href="index.html#products" class="text-secondary text-decoration-none">All products</a></li>
+                        <li><a href="best_sells.html" class="text-secondary text-decoration-none">Best sellers</a></li>
+                        <li><a href="on_discount.html" class="text-secondary text-decoration-none">On discount</a></li>
+                        <li><a href="todays_deal.html" class="text-secondary text-decoration-none">Today's deal</a></li>
+                        <li><a href="index.html#products" class="text-secondary text-decoration-none">Bundles & gifts</a></li>
+                        <li><a href="wishlist.html" class="text-secondary text-decoration-none">Your wishlist</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Customer care -->
+                <div class="col-lg-2 col-md-3 col-6">
+                    <h6 class="fw-bold text-white mb-3">Customer care</h6>
+                    <ul class="list-unstyled d-flex flex-column gap-2 small">
+                        <li><a href="help.html" class="text-secondary text-decoration-none">Contact us</a></li>
+                        <li><a href="help.html" class="text-secondary text-decoration-none">Shipping & delivery</a></li>
+                        <li><a href="help.html" class="text-secondary text-decoration-none">Returns & refunds</a></li>
+                        <li><a href="profile_customer.html#history-tab" class="text-secondary text-decoration-none">Track your order</a></li>
+                        <li><a href="live_chat.html" class="text-secondary text-decoration-none">Message a seller</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 4: About Friday -->
+                <div class="col-lg-2 col-md-3 col-6">
+                    <h6 class="fw-bold text-white mb-3">About Friday</h6>
+                    <ul class="list-unstyled d-flex flex-column gap-2 small">
+                        <li><a href="index.html" class="text-secondary text-decoration-none">Our story</a></li>
+                        <li><a href="account_type_change.html" class="text-secondary text-decoration-none">Become a seller</a></li>
+                        <li><a href="#" class="text-secondary text-decoration-none">Careers</a></li>
+                        <li><a href="#" class="text-secondary text-decoration-none">Sustainability</a></li>
+                        <li><a href="#" class="text-secondary text-decoration-none">Press & partnerships</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 5: Need a hand? -->
+                <div class="col-lg-3 col-md-6 col-6">
+                    <h6 class="fw-bold text-white mb-3">Need a hand?</h6>
+                    <p class="text-secondary small mb-3">We're here to help you find the good stuff.</p>
+
+                    <div class="d-flex align-items-center gap-2 text-secondary small mb-2">
+                        <i class="fa-regular fa-envelope text-white"></i>
+                        <span>info.friday@gmail.com</span>
+                    </div>
+                    <div class="d-flex align-items-center gap-2 text-secondary small mb-4">
+                        <i class="fa-solid fa-phone text-white"></i>
+                        <span>+880 15000 000000</span>
+                    </div>
+
+                    <button
+                        class="btn btn-outline-secondary text-white btn-sm rounded-pill px-3 py-2 d-inline-flex align-items-center gap-2 border-secondary">
+                        <i class="fa-solid fa-globe"></i> Bangladesh &bull; BDT
+                    </button>
+                </div>
+
+            </div>
+        </div>
+
+    </footer>
+    <!-- small-footer -->
+    <div class="bg-dark text-secondary py-4 mb-3 small">
+
+        <div class="container-fluid">
+            <hr class="py-0 mx-5">
+            <div class="row align-items-center gy-3">
+
+                <!-- Copyright -->
+                <div class="col text-start">
+                    <span>&copy; 2026 Friday. All rights reserved.</span>
+                </div>
+
+                <!-- Links -->
+                <div class="col text-center">
+                    <div class="d-flex justify-content-center  gap-4">
+                        <a href="#" class="text-secondary text-decoration-none">Privacy policy</a>
+                        <a href="#" class="text-secondary text-decoration-none">Terms & conditions</a>
+                        <a href="#" class="text-secondary text-decoration-none">Cookie settings</a>
+                        <a href="#" class="text-secondary text-decoration-none">Accessibility</a>
+                    </div>
+                </div>
+
+
+                <div class="col text-end">
+                    <span>Made for better finds <i class="fa-solid fa-heart text-primary"></i></span>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="fixed-bottom bg-dark text-white py-0 shadow-lg border-top border-secondary border-opacity-25"
+        style="z-index: 1050;">
+        <marquee behavior="scroll" direction="left" scrollamount="6" class="m-0 fw-medium small">
+            <span class="mx-4"><i class="fa-solid fa-truck-fast text-primary me-2"></i> Free shipping on all orders over
+                &#2547;2000!</span>
+            <span class="mx-4"><i class="fa-solid fa-bolt text-warning me-2"></i> Flash Sale: Up to 40% off on Tech &
+                Gadgets!</span>
+            <span class="mx-4"><i class="fa-solid fa-rotate-left text-success me-2"></i> Easy 7-day hassle-free
+                returns</span>
+                <span class="mx-4"><i class="fa-solid fa-truck-fast text-primary me-2"></i> Free shipping on all orders over
+                &#2547;2000!</span>
+            <span class="mx-4"><i class="fa-solid fa-bolt text-warning me-2"></i> Flash Sale: Up to 40% off on Tech &
+                Gadgets!</span>
+            <span class="mx-4"><i class="fa-solid fa-rotate-left text-success me-2"></i> Easy 7-day hassle-free
+                returns</span>
+                <span class="mx-4"><i class="fa-solid fa-truck-fast text-primary me-2"></i> Free shipping on all orders over
+                &#2547;2000!</span>
+            <span class="mx-4"><i class="fa-solid fa-bolt text-warning me-2"></i> Flash Sale: Up to 40% off on Tech &
+                Gadgets!</span>
+            <span class="mx-4"><i class="fa-solid fa-rotate-left text-success me-2"></i> Easy 7-day hassle-free
+                returns</span>
+        </marquee>
+    </div>
+    <!-- Bootstrap 5 JS Bundle CDN (Optional) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
